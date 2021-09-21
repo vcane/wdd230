@@ -1,5 +1,5 @@
 ///code below is from 9/15/21 WDD230 Virtual Lab
-c/onst copyrightyr = document.getElementById('copyrightyr');
+const copyrightyr = document.getElementById('copyrightyr');
 copyrightyr.textContent = new Date().getFullYear();
 
 //code below is from my first try at the course portal home page
