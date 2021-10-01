@@ -67,14 +67,3 @@ nav a:hover {
 footer p a {
   color: #ffffff;
 }
-
-/*@media screen and (max-width: 550px) {
-
-  /*beginning of media query*/
-/*.home-grid,
-  nav ul,
-  .banner-box,
-  footer {
-    display: block;
-  }
-}*/
