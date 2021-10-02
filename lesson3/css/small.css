@@ -1,7 +1,7 @@
 body {
   background-color: #542D09;
   font-family: 'Roboto', sans-serif;
-  max-width: 770px;
+  max-width: 800px;
   font-size: 16px;
   color: #404040;
   margin: 0 auto;
@@ -10,10 +10,11 @@ body {
 
 header, footer, main, nav{
   background-color: #EDB27B;
+  font-size: 0.95rem;
 }
 
 header a img {
-  width: 50%;
+  width: 110px;
 }
 
 h1, h2, h3, h4 {
@@ -26,11 +27,11 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .main-headline {
@@ -43,13 +44,22 @@ header {
 
 h3 {
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
 }
 
 main {
   padding: 0.5rem 1rem;
   margin-bottom: -1rem;
+}
+
+main p {
+  margin: 0.5rem 0;
+}
+
+main img {
+  width: 100%;
+  border: 1px solid #404040;
 }
 
 nav ul {
@@ -69,9 +79,8 @@ nav ul li a {
 }
 
 nav a:hover {
-  background-color: #EDB27B;
-  color: #404040;
-  border: 1px black solid;
+  background-color: #E8D5C3;
+  color: #404040; 
 }
 
 footer {
