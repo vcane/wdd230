@@ -1,14 +1,11 @@
 @media only screen and (min-width: 60em) {
-  header h1, h1 {
+  .header-1 {
     font-size: 2.5rem;
     margin-bottom: 1.75rem;
   }
 
-  header h2 {
+  .header-2 {
     margin-top: 2rem;
-  }
-
-  header h2, h2 {
     font-size: 2rem;
   }
 

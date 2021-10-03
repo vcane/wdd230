@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,45 +9,63 @@
   <meta name="description"
     content="Weather site project for Virgil Cane in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
   <title>Color Scheme</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Roboto&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../css/normalize.css">
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
   <link href="css/large.css" rel="stylesheet">
-  <script defer src="../js/script.js"></script>
+
 </head>
+
 <body>
   <header>
     <a href="index.html"><img src="images/tricountynewsicon.png" alt="An image of the Tri-County News Icon."></a>
-    <h1>Tri-County News Site Plan</h1>
-    <h2>Reliable News for the Tri-County Area</h2>
+    <h1 class="header-headline">Tri-County News Site Plan</h1>
+    <h2 class="header-headline">Reliable News for the Tri-County Area</h2>
   </header>
-  
-    <nav>
-      <ul>
-        <li><a href="index.html">Site Purpose</a></li>
-        <li><a href="target-audience.html">Target Audience</a></li>
-        <li><a href="color-scheme.html">Color Scheme</a></li>
-        <li><a href="typography.html">Typography</a></li>
-      </ul>
-    </nav>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Site Purpose</a></li>
+      <li><a href="target-audience.html">Target Audience</a></li>
+      <li><a href="color-scheme.html">Color Scheme</a></li>
+      <li><a href="typography.html">Typography</a></li>
+    </ul>
+  </nav>
   <main>
     <h2>Color Scheme</h2>
-    <p>The color scheme for the Tri-County News website utilizes a brown monochromatic scheme for the background colors and 
-      a gray for the fonts. The hex codes of the four colors are #542D09, #EDB27B, #E8D5C3, and #404040. I chose a brown 
-      monochromatic for two reasons. First, the color brown implies reliability. I would like the Tri-County News website
-      to be perceived as a website that provides reliable, accurate information. Second, I wanted to try a monochromatic 
+    <p class="color-p">The color scheme for the Tri-County News website utilizes a brown monochromatic scheme for the
+      background colors and
+      a gray for the fonts. The hex codes of the four colors are #542D09, #EDB27B, #E8D5C3, and #404040. I chose a brown
+      monochromatic for two reasons. First, the color brown implies reliability. I would like the Tri-County News
+      website
+      to be perceived as a website that provides reliable, accurate information. Second, I wanted to try a monochromatic
       color scheme. I chose a gray for the font because it meets the accessibility standards and is not white or black.
-    </p>
-    <img src="images/monobrown.jpg" alt="Monochromatic brown color scheme palette for site plan">
-    <br>
-    <br>
-    <img src="images/grays.jpg" alt="Gray color scheme palette for font in site plan">
-    
+      <section class="colors">
+        <figure>
+          <img src="images/542D09.jpg" alt="hex #542D09 dark brown">
+          <figcaption>#542D09</figcaption>
+        </figure>
+        <figure>
+          <img src="images/E8D5C3.jpg" alt="hex #E8D5C3 light tan">
+          <figcaption>#E8D5C3</figcaption>
+        </figure>
+        <figure>
+          <img src="images/EDB27B.jpg" alt="hex #EDB27B beige">
+          <figcaption>#EDB27B</figcaption>
+        </figure>
+        <figure>
+          <img src="images/404040.jpg" alt="hex #404040 medium gray">
+          <figcaption>#404040</figcaption>
+        </figure>
+      </section>
   </main>
   <footer>
-    <p>&copy; <span id="copyrightyr"></span> | Virgil Cane</p> 
+    <p>&copy; <span id="copyrightyr"></span> | Virgil Cane</p>
     <p>Last updated: <span id="lastupdate"></span></p>
   </footer>
+  <script src="../js/script.js"></script>
 </body>
+
 </html>
