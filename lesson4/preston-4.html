@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Virgil Cane">
+  <meta name="description"
+    content="Tri-County News website project">
+  <title>Tri-County News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="../lesson3/images/tricountynewsicon.png" alt="An image of the Tri-County News Icon."></a>
+    <section class="headings">
+      <h1>Tri-County News</h1>
+      <div class="motto">Reliable News for the Tri-County Area<button onclick="toggleMenu()">&#9776;</button></div>
+    </section>
+    
+  </header>
+  <nav>
+    <ul id="primaryNav" class="hide">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Preston, Idaho</h2>
+    <div class="hero"><img src="#" alt="Hero image"></div>
+    <div class="weather">Weather Summary</div>
+    <div class="forecast">Five Day Forecast</div>
+    <article>
+      <h3>Article Title</h3>
+      <p>This is a paragraph!</p>
+      <img src="#" alt="Image in the article">
+    </article>
+  </main>
+  <footer>
+    <section>
+      <h4>Contact Information</h4>
+      <address>
+        <div>Virgil Cane</div>
+        123 Main St.
+        City, State Zip Code
+        <div><a href="mailto:virgil@tricountynews.org">virgil@tricountynews.org</a></div>
+        <div>(123) 456-7890</div>
+      </address> 
+    </section>
+    <div class="map">map placeholder</div>
+    <p>&copy; <span id="copyrightyr"></span> | Current date: <span id="currentdate"></span></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
