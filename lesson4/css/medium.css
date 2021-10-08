@@ -1,11 +1,15 @@
 @media only screen and (min-width: 32.5em) {
-  
-  nav ul {
+  .nav-list {
     display: flex;
   }
 
-  nav ul li {
+  .nav-list li {
     flex: 1 1 100%;
+    display: block;
+  }
+
+  .nav-list li:first-child{
+    display: none;
   }
   
   

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--https://vcane.github.io/wdd230/lesson4/preston-4.html-->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,15 +19,18 @@
 
 <body>
   <header>
-    <a href="index.html"><img src="../lesson3/images/tricountynewsicon.png" alt="An image of the Tri-County News Icon."></a>
+    <picture>
+      <img src="../lesson3/images/tricountynewsicon.png" alt="An image of the Tri-County News Icon.">
+    </picture>
     <section class="headings">
       <h1>Tri-County News</h1>
-      <div class="motto">Reliable News for the Tri-County Area<button onclick="toggleMenu()">&#9776;</button></div>
+      <div class="motto">Reliable News for the Region</div>
     </section>
-    
   </header>
+  <!--<button onclick="toggleMenu()"></button>-->
   <nav>
-    <ul id="primaryNav" class="hide">
+    <ul class="nav-list">
+      <li><a class="menu" href="#">Menu</a></li>
       <li><a href="#">Home</a></li>
       <li><a href="#">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
@@ -61,7 +64,8 @@
     <div class="map">map placeholder</div>
     <p>&copy; <span id="copyrightyr"></span> | Current date: <span id="currentdate"></span></p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/button.js"></script>
+  <script src="js/date.js"></script>
 </body>
 
 </html>
