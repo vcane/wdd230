@@ -15,8 +15,3 @@ window.onresize = () => {if (window.innerWidth > 760) nav.classList.remove('resp
 
   classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
   */
-
-
-//function toggleMenu() {
-//  document.getElementById('primarynav').classList.toggle('hide');
-//}
