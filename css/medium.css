@@ -1,5 +1,47 @@
 @media (min-width: 32.5em) {
-  img {
-    float: right;
+  header {
+    display: block;
   }
+
+  header, nav, footer {
+    font-size: 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  img {
+    width: 150px;
+    height: auto;
+    float: right;
+    border-radius: 10px;
+    margin: 0.5rem 0.5rem 0 0;
+    border: 1px solid black;
+  }
+
+  li {
+    list-style-type: '👉';
+    padding-inline-start: 1ch;
+    line-height: 1.5em;
+  }
+
+  ul {
+    padding-left: 2rem;
+    display: table;
+    margin: 0 auto;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    
+    color: black;
+  }
+
+
 }

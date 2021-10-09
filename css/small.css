@@ -1,18 +1,30 @@
 body {
   background-color: #ffffff;
   font-family: 'Ubuntu', sans-serif;
-  max-width: 700px;
+  max-width: 960px;
   margin: 0 auto;
   font-size: 16px;
 }
 
-header,
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header, 
 footer {
   background-color: #2c49bb;
   color: #ffffff;
-  border-radius: 25px;
-  padding: 0.25em;
-  border: 1px solid black;
+  padding: 1rem 0.5rem;
+  
+}
+
+header, nav, footer {
+  font-size: 0.95rem;
+}
+
+main {
+  padding: 0.5rem;
 }
 
 h1, h2 {
@@ -20,48 +32,46 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3.0rem;
-  margin: 20px 0;
-  padding-left: 4.0rem;
+  font-size: 2rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  align-self: flex-end;
 }
 
 h2 {
   font-size: 1.5rem;
-  padding-left: 2.0rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  text-align: center;
 }
 
 ul {
-  padding-left: 4.5rem;
+  padding-left: 1.75rem;
+  margin: 0;
 }
 
 li {
   list-style-type: '👉';
-  padding-inline-start: 1ch;
+  padding-inline-start: 0.25rem;
   line-height: 1.5em;
 }
 
 img {
-  width: 200px;
+  width: 128px;
   height: auto;
-  float: right;
   border-radius: 10px;
-  margin: 30px 30px 0px 0px;
+  margin: 0;
   border: 1px solid black;
 }
 
-footer {
+footer p {
   text-align: center;
+  margin: 0;
+  padding: 0.5rem;
 }
 
 nav a {
-  font-size: 1.1em;
   text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  font-size: 1.2em;
-  color: black;
 }
 
 footer p a {

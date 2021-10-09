@@ -1,0 +1,39 @@
+@media (min-width: 60em) {
+  nav a:hover {
+    font-size: 1.3rem;
+  }
+
+  header, nav, footer {
+    font-size: 1.1rem;
+  }
+
+  header, footer {
+    border-radius: 1rem;
+  }
+
+  
+
+  h1 {
+    font-size: 3rem;
+    
+  }
+
+  h2 {
+    font-size: 2rem;
+    
+  }
+  
+  img {
+    width: 250px;
+    margin: 2rem 2rem 0 0;
+  }
+
+  ul {
+    padding-left: 4.5rem;
+    
+  }
+
+  
+  
+
+}
