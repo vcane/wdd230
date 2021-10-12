@@ -29,7 +29,7 @@ button.addEventListener('click', function() {
   input.focus();
   input.value = "";
 
-  if (inputText != "") {
+  /*if (inputText != "") {
     main.removeChild(para);
-  }
+  }*/
 })
