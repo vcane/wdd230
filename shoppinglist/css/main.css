@@ -5,6 +5,10 @@ body {
   color: black;
   font-family: Arial, san-serif;
   padding: 0.25rem;
+  
+}
+
+div {
   text-align: center;
 }
 
