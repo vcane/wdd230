@@ -5,10 +5,11 @@ const main = document.querySelector('main');
 
 button.addEventListener('click', function() {
   let inputText = input.value;
+  let para;
   
   
   if (inputText === "") {
-    const para = document.createElement('p');
+    para = document.createElement('p');
     para.textContent = 'Please enter your favorite chapter in the Book of Mormon.';
     main.appendChild(para);
   }
@@ -24,12 +25,13 @@ button.addEventListener('click', function() {
     listButton.addEventListener('click', function() {
       list.removeChild(listItem);
     })
+    
   }
   
   input.focus();
   input.value = "";
-
-  /*if (inputText != "") {
+  
+  if (inputText != "") {
     main.removeChild(para);
-  }*/
+  }
 })
