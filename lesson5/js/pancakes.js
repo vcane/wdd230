@@ -1,9 +1,6 @@
-const today = new Date();
-const day = today.getDay();
-//const notification = document.querySelector('.pancakes');
-const div = document.querySelector('.pancakes');
-const event = new Event('build');
+const d = new Date();
+const day = d.getDay();
 
-if (day == 3) {
-  div.addEventListener('build', () => {notification.classList.toggle('responsive')}, false);
+if (day == '5') {
+  document.querySelector('.pancakes').style.display = "block";
 }

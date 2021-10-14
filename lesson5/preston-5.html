@@ -8,7 +8,7 @@
   <meta name="author" content="Virgil Cane">
   <meta name="description"
     content="Tri-County News provides reliable and excellent coverage of the Preston, Soda Springs, and Fish Haven region.">
-  <title>Tri-County News</title>
+  <title>Tri-County News | Preston</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Roboto&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/normalize.css">
@@ -16,6 +16,9 @@
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
   <link href="css/large.css" rel="stylesheet">
+  <script defer src="js/button.js"></script>
+  <script defer src="js/date.js"></script>
+  <script defer src="js/pancakes.js"></script>
 </head>
 
 <body>
@@ -34,7 +37,7 @@
     <ul class="nav-list">
       <li><a class="menu" href="#">Menu</a></li>
       <li><a href="#">Home</a></li>
-      <li><a href="#">Preston</a></li>
+      <li class="active"><a href="#">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
       <li><a href="#">Fish Haven</a></li>
       <li><a href="#">Storm Center</a></li>
@@ -43,40 +46,51 @@
   </nav>
   <main>
     <h2>Preston, Idaho</h2>
-    <div class="hero">
-      <img src="images/mountaintown.jpg" alt="A photo of a town with mountains in the background.">
+    <div class="herocontainer">
+      <picture>
+        <img src="images/mountaintown.jpg" alt="A photo of a town with mountains in the background.">
+      </picture>
+      <section class="weather">
+        <h3>Weather Summary</h3>
+        <p class="left">Currently:</p> 
+        <p class="right">Sunny</p>
+        <p class="left">Current temp:</p> 
+        <p class="right">72°F</p>
+        <p class="left">Wind Chill:</p> 
+        <p class="right">72°F</p>
+        <p class="left">Humidity:</p> 
+        <p class="right">30%</p>
+        <p class="left">Wind Speed:</p> 
+        <p class="right">5 mph</p>
+      </section>
     </div>
-    <div class="weather">
-      <h4>Weather Summary</h4>
-      <p class="left">Currently:</p> 
-      <p class="right">Sunny</p>
-      <p class="left">High:</p> 
-      <p class="right">72&#8457;</p>
-      <p class="left">Wind Chill:</p> 
-      <p class="right">72&#8457;</p>
-      <p class="left">Humidity:</p> 
-      <p class="right">30%</p>
-      <p class="left">Wind Speed:</p> 
-      <p class="right">5 mph</p>
-    </div>
-    <div class="forecast">
-      <h3>Five Day Forecast</h3>
-      <table>
-        <tr>
-          <td>Mon</td>
-          <td>Tues</td>
-          <td>Wed</td>
-          <td>Thurs</td>
-          <td>Fri</td>
-        </tr>
-        <tr>
-          <td>Sunny 72&#8457;</td>
-          <td>Sunny 74&#8457;</td>
-          <td>Sunny 73&#8457;</td>
-          <td>Sunny 71&#8457;</td>
-          <td>Sunny 69&#8457;</td>
-        </tr>
-      </table>
+    <h3>Five Day Forecast</h3>
+    <div class="flex">
+      <div class="flex-col">
+        <span class="col-head">Monday</span>
+        <img src="images/sunny.png" alt="sun icon">
+        <span class="condition">Sunny 72°F</span>
+      </div>
+      <div class="flex-col">
+        <span class="col-head">Tuesday</span>
+        <img src="images/sunny.png" alt="sun icon">
+        <span class="condition">Sunny 72°F</span>
+      </div>
+      <div class="flex-col">
+        <span class="col-head">Wednesday</span>
+        <img src="images/sunny.png" alt="sun icon">
+        <span class="condition">Sunny 72°F</span>
+      </div>
+      <div class="flex-col">
+        <span class="col-head">Thursday</span>
+        <img src="images/sunny.png" alt="sun icon">
+        <span class="condition">Sunny 72°F</span>
+      </div>
+      <div class="flex-col">
+        <span class="col-head">Friday</span>
+        <img src="images/sunny.png" alt="sun icon">
+        <span class="condition">Sunny 72°F</span>
+      </div>
     </div>
     <article>
       <h3>Annual Preston Community Park</h3>
@@ -95,8 +109,9 @@
       <h4>Contact Information</h4>
       <address>
         <div>Virgil Cane</div>
-        123 Main St.
-        City, State Zip Code
+        <a href="https://www.google.com/maps/place/122+N+State+St,+Preston,+ID+83263/@42.0982864,-111.8755277,515m/data=!3m1!1e3!4m5!3m4!1s0x8754f7ec3fd44b75:0xa6697de0f851a52!8m2!3d42.0988475!4d-111.8760719" target="_blank">122 N. State St.
+        Preston, ID 83263
+        </a>
         <div><a href="mailto:virgil@tricountynews.org">virgil@tricountynews.org</a></div>
         <div>(123) 456-7890</div>
       </address> 
