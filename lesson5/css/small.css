@@ -48,6 +48,8 @@ header img {
 
 nav {
   clear:both;
+  background-color: #404040;
+  
 }
 
 nav ul {
@@ -71,7 +73,6 @@ nav ul {
 
 nav ul li a {
   display: block;
-  background-color: #404040;
   color: #EDB27B;
   text-align: center;
   padding: 1rem;
