@@ -43,6 +43,7 @@ header img {
 
 .motto {
   font-style: italic;
+  padding: 0.25rem;
 }
 
 nav {
@@ -100,12 +101,13 @@ h2,
 h3,
 h4 {
   font-family: 'Playfair Display', serif;
-  margin: 0;
+  
 }
 
 h1 {
   font-size: 1.5rem;
   padding: 0.25rem 0;
+  margin: 0;
 }
 
 h2 {
@@ -116,9 +118,8 @@ h2 {
 
 h3 {
   font-size: 1rem;
-  margin: 0;
   text-align: center;
-  padding: 0.1rem 0;
+  padding: 0.25rem 0;
 }
 
 h4 {
@@ -133,22 +134,35 @@ h4 {
 picture img, article img {
   width: 100%;
   height: auto;
-  padding: 0.25rem 0;
   margin: 0;
+  box-shadow:0 0 0.5rem 0.25rem #404040;
+  border-radius: 5px;
+}
+
+.forecast {
+  margin: 1rem 0 0.25rem 0;
+}
+
+.park {
+  margin: 1rem 0 0 0;
+}
+
+.tot {
+  margin: 0 0 0.5rem 0;
 }
 
 .weather {
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
+  top: 0.25rem;
+  left: 0.25rem;
   margin: 0;
   background-color: rgba(232, 213, 195, 0.7);
-  padding: 0.25rem;
+  padding: 0.5rem;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 0.25rem;
-  width: 60%;
+  width: auto;
 }
 
 .left {
@@ -161,9 +175,10 @@ picture img, article img {
 
 .weather h3 {
   grid-column: 1 / span 2;
+  margin: 0;
 }
 
-.weather p, .weather h4 {
+.weather p {
   margin: 0;
   padding: 0.1rem 0;
 }
@@ -171,7 +186,7 @@ picture img, article img {
 .flex {
   display: flex;
   flex-flow: row wrap;
-  font-size: 0.7rem;
+  
   margin: 0.5rem 0;
 }
 
@@ -192,6 +207,7 @@ picture img, article img {
   background-color: #E8D5C3;
   text-align: center;
   padding: 0.25rem 0;
+  font-size: 0.7rem;
 }
 
 .col-head {
@@ -207,25 +223,34 @@ picture img, article img {
 
 article p {
   margin: 0;
-  padding: 0.25rem 0;
+  padding: 0.75rem 0;
+  
 }
 
 footer {
   padding: 1rem;
-  margin-top: 1rem;
-  border-top: 1px #404040 solid; 
+  border-top: 1px #404040 solid;
+}
+
+footer h4 {
+  padding: 0.5rem;
+  margin: 0;
 }
 
 footer section {
   text-align: center;
-  padding-bottom: 0.5rem;
+  
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
-footer p {
+footer p, footer div, footer a, footer span {
   text-align: center;
+  padding: 0.5rem;
+  margin: 0;
 }
 
-.map {
+.map, .zoomed {
   display: none;
 }
 
