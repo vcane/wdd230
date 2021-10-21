@@ -1,0 +1,117 @@
+@media only screen and (min-width: 32.5em) {
+  header {
+    justify-content: space-around;
+  }
+
+  header,
+  footer,
+  main,
+  nav,
+  .pancakes {
+    font-size: 1rem;
+  }
+
+  .pancakes p {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  header img {
+    width: 128px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list li {
+    flex: 1 1 auto;
+    display: block;
+  }
+
+  .nav-list li:first-child{
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .motto {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.25rem 0;
+  }
+
+  .weather {
+    width: auto;
+    padding: 0.5rem;
+  }
+
+  .flex img {
+    width: 60px;
+    padding-top: 0.5rem;
+  }
+
+  .col-head, .condition {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  article img {
+    float: left;
+    width: 50%;
+    margin: 0 1rem 0.5rem 0;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer section {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 150px;
+    align-self: start;
+  }
+
+  .social {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .social img {
+    width: 45px;
+  }
+
+  footer p {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: center;
+    height: 30px; 
+  }
+
+  .zoomed {
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; 
+    padding: 0; 
+    
+  }
+
+  .zoomed img {
+    width: 225px;
+    height: auto;
+  }
+    
+}
