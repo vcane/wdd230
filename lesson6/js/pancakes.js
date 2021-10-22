@@ -1,6 +1,4 @@
-const d = new Date();
-const day = d.getDay();
-
+const day = new Date().getDay();
 if (day == 5) {
   document.querySelector('.pancakes').style.display = "block";
 }

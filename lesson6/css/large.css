@@ -19,8 +19,8 @@
     padding: 1rem 1.5rem 1.5rem 1.5rem;
   }
 
-  header img {
-    width: 200px;
+  picture .icon {
+    width: 180px;
   }
 
   h1 {
@@ -43,7 +43,7 @@
     font-size: 1.5rem;
   }
 
-  picture img {
+  .heroimg img, article img {
     box-shadow: 0 0 1rem 0.55rem #404040;
   }
   
@@ -85,7 +85,6 @@
   article img {
     width: 50%;
     margin: 0 1.5rem 1rem 1rem;
-    box-shadow: 0 0 1rem 0.55rem #404040;
   }
 
   footer {
@@ -107,7 +106,6 @@
 
   footer p {
     grid-column: 1 / 3;
-     
   }
 
   .zoomed {

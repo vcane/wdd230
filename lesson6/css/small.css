@@ -31,7 +31,7 @@ header {
   font-size: 0.95rem;
 }
 
-header img {
+picture .icon {
   width: 80px;
 }
 
@@ -47,7 +47,7 @@ header img {
 }
 
 nav {
-  clear:both;
+  /*clear:both;*/
   background-color: #404040;
   
 }
@@ -132,7 +132,7 @@ h4 {
   position: relative;
 }
 
-picture img, article img {
+.heroimg img, article img {
   width: 100%;
   height: auto;
   margin: 0;
