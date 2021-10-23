@@ -55,9 +55,8 @@
     <h2>Preston, Idaho</h2>
     <div class="herocontainer">
       <picture class="heroimg">
-        <!--NEED TO FIX PIXALATION ON MEDIUM, MAYBE BIGGER PICTURE NEEDED-->
         <source media="(max-width: 510px)" srcset="images/franklinsmall50.webp">
-        <source media="(max-width: 939px)" srcset="images/franklinmedium60.webp">
+        <source media="(max-width: 939px)" srcset="images/franklinmed70.webp">
         <source media="(min-width: 940px)" srcset="images/franklinlarge70.webp">
         <img src="images/franklinorg70.webp"
           alt="A green, grassy field with trees and mountains in the background on a sunny day.">
@@ -107,7 +106,13 @@
     <article>
       <h3 class="park">Annual Preston Community Park</h3>
       <h3 class="tot">Trunk or Treat</h3>
-      <img src="images/kidsincostumes.jpg" alt="Photo of several kids in different Halloween costumes.">
+      <picture class="kids">
+        <source media="(max-width: 510px)" srcset="images/kidsincostumes70small.webp">
+        <source media="(max-width: 939px)" srcset="images/kidsincostumesmed70.webp">
+        <source media="(min-width: 940px)" srcset="images/kidsincostumeslarge.webp">
+        <img src="images/kidsincostumes-org.webp"
+          alt="Photo of several kids in different Halloween costumes.">
+      </picture>
       <p>The Annual Preston Community Park Trunk or Treat will be held on Saturday, October 30<sup>th</sup> starting at
         6:30 P.M.
         Prepare your little pirates, superheroes, princesses, and unicorns to collect their year's worth of candy. Come
@@ -125,8 +130,6 @@
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.
       </p>
-
-
     </article>
   </main>
   <footer>
@@ -143,13 +146,20 @@
       <a href="mailto:virgil@tricountynews.org">virgil@tricountynews.org</a>
 
     </section>
-    <div class="map">
-      <img src="images/map.jpg"
+    <picture class="map">
+      <source media="(max-width: 510px)" srcset="images/map520-70.webp">
+      <source media="(max-width: 939px)" srcset="images/map520-70.webp">
+      <source media="(min-width: 940px)" srcset="images/map520-70.webp">
+      <img src="images/map-org.webp"
         alt="A map displaying the location of Preston, Soda Springs and Fish Haven in southeast Idaho.">
-    </div>
-    <div class="zoomed">
-      <img src="images/mapzoomed.jpg" alt="The location of Tri-County News office in Preston, Idaho.">
-    </div>
+    </picture>
+    <picture class="zoomed">
+      <source media="(max-width: 510px)" srcset="images/mapzoomed70-370.webp">
+      <source media="(max-width: 939px)" srcset="images/mapzoomed70-370.webp">
+      <source media="(min-width: 940px)" srcset="images/mapzoomed70-370.webp">
+      <img src="images/mapzoomed.webp"
+        alt="The location of Tri-County News office in Preston, Idaho.">
+    </picture>
     <div class="social">
       <a href="https://twitter.com/" target="_blank" rel="noopener">
         <img src="images/twittericon.png" alt="twitter logo" />
@@ -163,7 +173,5 @@
     </div>
     <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
   </footer>
-
 </body>
-
 </html>

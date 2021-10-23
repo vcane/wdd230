@@ -132,7 +132,7 @@ h4 {
   position: relative;
 }
 
-.heroimg img, article img {
+.heroimg img,  .kids img{
   width: 100%;
   height: auto;
   margin: 0;
