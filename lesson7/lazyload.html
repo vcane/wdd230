@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Virgil Cane">
+    <meta name="description"
+      content="An opprotunity to practice lazy loading of images using JavaScript and CSS.">
+    <title>Lazy Load Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css" media="all">
+    <link href="css/main.css" rel="stylesheet"> 
+    <script defer src="js/lazyload.js"></script>   
+  </head>
+  <body>
+    <h1>Lazy Loading Images</h1>
+    <picture>
+      <img src="http://via.placeholder.com/300x400" data-src="https://www.fillmurray.com/300/400" alt="a 300x400 image of Bill Murray">
+    </picture>
+    <picture>
+      <img src="http://via.placeholder.com/300x400" data-src="https://baconmockup.com/300/400" alt="a 300x400 image of bacon">
+    </picture>
+    <picture>
+      <img src="http://via.placeholder.com/300x400" data-src="http://placekitten.com/300/400" alt="a 300x400 image of a kitten">
+    </picture>
+    <picture>
+      <img src="http://via.placeholder.com/300x400" data-src="https://baconmockup.com/300/400" alt="a 300x400 image of bacon">
+    </picture>
+    <picture>
+      <img src="http://via.placeholder.com/300x400" data-src="http://placekitten.com/300/400" alt="a 300x400 image of a kitten">
+    </picture>
+  </body>
+</html>
