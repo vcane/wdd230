@@ -47,9 +47,7 @@ picture .icon {
 }
 
 nav {
-  /*clear:both;*/
-  background-color: #404040;
-  
+  background-color: #404040;  
 }
 
 nav ul {
@@ -132,7 +130,7 @@ h4 {
   position: relative;
 }
 
-.heroimg img,  .kids img{
+.heroimg img, .kids img, figure img{
   width: 100%;
   height: auto;
   margin: 0;
@@ -266,4 +264,20 @@ footer p, footer div, footer a, footer span {
 .social img {
   width: 10%;
   padding: 0.5rem;
+}
+
+div.container {
+  display: block;
+  width: 100%;
+  text-align: center;  
+}
+
+figure {
+  width: 100%;
+  margin: 0 auto;  
+}
+
+figcaption {
+  padding: 0.5rem 0;
+  margin-bottom: 0.75rem;
 }
