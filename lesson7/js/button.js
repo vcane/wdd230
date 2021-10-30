@@ -1,10 +1,14 @@
 const button = document.querySelector('.menu');
 const nav = document.querySelector('.nav-list');
 
-button.addEventListener('click', () => {nav.classList.toggle('responsive')}, false);
+button.addEventListener('click', () => {
+  nav.classList.toggle('responsive')
+}, false);
 
 // To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 760) nav.classList.remove('responsive')};
+window.onresize = () => {
+  if (window.innerWidth > 760) nav.classList.remove('responsive')
+};
 
 /*** Programming Notes **************************************
   querySelector - 

@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Virgil Cane">
-    <meta name="description"
-      content="Tri-County News provides reliable and excellent coverage of the Preston, Soda Springs, and Fish Haven region.">
-    <title>Tri-County News | Gallery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="shortcut icon" href="red-favicon.ico">
-    <script defer src="js/button.js"></script>
-    <script defer src="js/date.js"></script>
-    <script defer src="js/lazyload.js"></script>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Virgil Cane">
+  <meta name="description"
+    content="Tri-County News provides reliable and excellent coverage of the Preston, Soda Springs, and Fish Haven region.">
+  <title>Tri-County News | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
+    rel="stylesheet" media="all">
+  <link rel="stylesheet" href="css/normalize.css" media="all">
+  <link rel="stylesheet" href="css/small.css" media="all">
+  <link rel="stylesheet" href="css/medium.css" media="all">
+  <link rel="stylesheet" href="css/large.css" media="all">
+  <link rel="shortcut icon" href="red-favicon.ico">
+  <script defer src="js/button.js"></script>
+  <script defer src="js/date.js"></script>
+  <script defer src="js/lazyload.js"></script>
+  <script defer src="js/localstorage.js"></script>
+</head>
+
 <body>
   <header>
     <picture>
@@ -52,7 +55,8 @@
         <figcaption>Cloudy sunset over a beach.</figcaption>
       </figure>
       <figure>
-        <img src="images/placeholder.webp" data-src="images/cloudyskyovermtns.webp" alt="Clouds over snow capped mountains.">
+        <img src="images/placeholder.webp" data-src="images/cloudyskyovermtns.webp"
+          alt="Clouds over snow capped mountains.">
         <figcaption>Sunset reflecting off clouds over snow-capped mountains.</figcaption>
       </figure>
       <figure>
@@ -60,27 +64,33 @@
         <figcaption>Dark clouds during the day.</figcaption>
       </figure>
       <figure>
-        <img src="images/placeholder.webp" data-src="images/extremelightning.webp" alt="Thunderstorm with extreme amount of lightning over a city.">
+        <img src="images/placeholder.webp" data-src="images/extremelightning.webp"
+          alt="Thunderstorm with extreme amount of lightning over a city.">
         <figcaption>Extreme amount of lightning during a thunderstorm at night.</figcaption>
       </figure>
       <figure>
-        <img src="images/placeholder.webp" data-src="images/snow.webp" alt="A sunny morning with fresh snow from the night before.">
+        <img src="images/placeholder.webp" data-src="images/snow.webp"
+          alt="A sunny morning with fresh snow from the night before.">
         <figcaption>A fresh layer of snow on a frigid, sunny morning.</figcaption>
       </figure>
       <figure>
-        <img src="images/placeholder.webp" data-src="images/sunnycloudyday.webp" alt="A sunny day with clouds in the distance over some mountains.">
+        <img src="images/placeholder.webp" data-src="images/sunnycloudyday.webp"
+          alt="A sunny day with clouds in the distance over some mountains.">
         <figcaption>A sunny day with clouds in distance over mountains.</figcaption>
       </figure>
       <figure>
-        <img src="images/placeholder.webp" data-src="images/supercellatdusk.webp" alt="A colorful supercell thunderstorm at dusk.">
+        <img src="images/placeholder.webp" data-src="images/supercellatdusk.webp"
+          alt="A colorful supercell thunderstorm at dusk.">
         <figcaption>A supercell thunderstorm reflecting the colors of sunset.</figcaption>
       </figure>
       <figure>
-        <img src="images/placeholder.webp" data-src="images/supercellovercrops.webp" alt="A supercell thunderstorm with cropfield in the foreground.">
+        <img src="images/placeholder.webp" data-src="images/supercellovercrops.webp"
+          alt="A supercell thunderstorm with cropfield in the foreground.">
         <figcaption>A supercell thunderstorm in the distance near cropland.</figcaption>
       </figure>
-      <figure>
-        <img src="images/placeholder.webp" data-src="images/thunderstormovercity.webp" alt="A thunderstorm over a city with a single lightning strike.">
+      <figure class="lastfigure">
+        <img src="images/placeholder.webp" data-src="images/thunderstormovercity.webp"
+          alt="A thunderstorm over a city with a single lightning strike.">
         <figcaption>A thunderstorm moving into the city during sunset.</figcaption>
       </figure>
     </div>
@@ -97,6 +107,11 @@
       </address>
       <p>(123) 456-7890</p>
       <a href="mailto:virgil@tricountynews.org">virgil@tricountynews.org</a>
+      <div class="social">
+        <img src="images/twittericon.png" alt="twitter logo" />
+        <img src="images/instagramicon.png" alt="instgram logo" />
+        <img src="images/facebookicon.png" alt="facebook logo" />
+      </div>
     </section>
     <picture class="map">
       <source media="(max-width: 510px)" srcset="images/map520-70.webp">
@@ -109,21 +124,11 @@
       <source media="(max-width: 510px)" srcset="images/mapzoomed70-370.webp">
       <source media="(max-width: 939px)" srcset="images/mapzoomed70-370.webp">
       <source media="(min-width: 940px)" srcset="images/mapzoomed70-370.webp">
-      <img src="images/mapzoomed.webp"
-        alt="The location of Tri-County News office in Preston, Idaho.">
+      <img src="images/mapzoomed.webp" alt="The location of Tri-County News office in Preston, Idaho.">
     </picture>
-    <div class="social">
-      <a href="https://twitter.com/" target="_blank" rel="noopener">
-        <img src="images/twittericon.png" alt="twitter logo" />
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-        <img src="images/instagramicon.png" alt="instgram logo" />
-      </a>
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-        <img src="images/facebookicon.png" alt="facebook logo" />
-      </a>
-    </div>
     <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+    <p class="visit"><span class="lastvisit"></span></p>
   </footer>
 </body>
+
 </html>
