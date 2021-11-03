@@ -1,3 +1,4 @@
+let lastvisit;
 const lastVisit = parseFloat(localStorage.getItem('lastvisit'));
 if (lastVisit == null || lastVisit == NaN) {
   document.querySelector('.lastvisit').textContent = "Today is your first time here."
