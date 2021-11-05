@@ -1,0 +1,21 @@
+const button = document.querySelector('.menu');
+const nav = document.querySelector('.nav-list');
+
+button.addEventListener('click', () => {
+  nav.classList.toggle('responsive')
+}, false);
+
+// To solve the mid resizing issue with responsive class on
+window.onresize = () => {
+  if (window.innerWidth > 760) nav.classList.remove('responsive')
+};
+
+/*** Programming Notes **************************************
+  querySelector - 
+
+  Arrow Functions - es6 syntactically compact alternative to a regular function expression
+  see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+  or https://www.w3schools.com/js/js_arrow_function.asp
+
+  classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+  */

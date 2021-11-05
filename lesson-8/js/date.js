@@ -9,3 +9,6 @@ const options = {
 
 document.getElementById('currentdate');
 currentdate.textContent = date.toLocaleDateString('en-GB', options);
+
+document.getElementById('copyrightyr');
+copyrightyr.textContent = date.getFullYear();
