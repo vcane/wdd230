@@ -12,19 +12,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
     rel="stylesheet" media="all">
-  <!--<link rel="stylesheet" href="storm-css/normalize.css" media="all">
-  <link rel="stylesheet" href="storm-css/large.css" media="all">
-  <link rel="stylesheet" href="storm-css/medium.css" media="all">
-  <link rel="stylesheet" href="storm-css/small.css" media="all">-->
   <link rel="stylesheet" href="storm-css/normalize.css" media="all">
-  <link rel="stylesheet" href="storm-css/large.css" media="all">
-  <link rel="stylesheet" href="storm-css/medium.css" media="all">
   <link rel="stylesheet" href="storm-css/small.css" media="all">
+  <link rel="stylesheet" href="storm-css/medium.css" media="all">
+  <link rel="stylesheet" href="storm-css/large.css" media="all">
   <link rel="shortcut icon" href="red-favicon.ico">
   <script defer src="js/button.js"></script>
   <script defer src="js/date.js"></script>
-  <script defer src="js/lazyload.js"></script>
   <script defer src="js/localstorage.js"></script>
+  <script defer src="js/range.js"></script>
 </head>
 
 <body>
@@ -50,21 +46,68 @@
   </nav>
   <main>
     <h2>Storm Center</h2>
-    <form get="method" action="thanks.html">
+    <form method="get" action="thanks.html" id="form">
       <fieldset>
         <legend>Contact Information</legend>
-        <label>First Name: <input type="text" name="fname" required pattern="[A-Za-z]" minlength="5"></label>
-        <label>Last Name: <input type="text" name="lname" required pattern="[A-Za-z]" minlength="5"></label>
-        <label>Email: <input type="email" name="email" placeholder="name@gmail.com"></label>
-        <label>Phone number: <input type="tel" required></label>
-        <label>Zip Code: <input type="number" required></label>
+        <label class="top">First Name: <input type="text" name="fname" required pattern="[A-Za-z]+" minlength="2" title="Please enter your first name using capital or lowercase letters with a minimum of two letters."></label>
+        <label class="top">Last Name: <input type="text" name="lname" required pattern="[A-Za-z]+" minlength="2" title="Please enter your last name using capital or lowercase letters with a minimum of two letters."></label>
+        <label class="top">Email: <input type="email" name="email" placeholder="name@gmail.com"></label>
+        <label class="top">Phone number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required title="Please enter your phone number with area code following this format: 123-456-7890"></label>
+        <label class="top">Zip Code: <input type="number" name="zipcode" required title="Please enter your zip code. Five numeric characters required. No dashes or parentheses required."></label>
       </fieldset>
       <fieldset>
         <legend>Storm Information</legend>
-        <label>Storm Date: <input type="date"></label>
-        <!--<label>Storm Type: <input type="datalist"></label>-->
+        <label class="top">Storm Date: <input type="date" name="stormdate"></label>
+        <label class="top">Storm Type: <input list="stormtypes" name="stormtype"></label>
+        <datalist id="stormtypes">
+          <option value="">Please Select</option>
+          <option value="Flashflood">Flashflood</option>
+          <option value="Hail">Hail</option>
+          <option value="Hurricane">Hurricane</option>
+          <option value="Thunderstorm">Thunderstorm</option>
+          <option value="Tornado">Tornado</option>
+        </datalist>
+        <label class="top">Storm Severity: <span class="stormseverity"> </span><input type="range" id="severity" name="severity" list="tickmarks" min="1" max="10" oninput="adjustRating(this.value)" ></label>
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+          <option value="6"></option>
+          <option value="7"></option>
+          <option value="8"></option>
+          <option value="9"></option>
+          <option value="10"></option>
+        </datalist>
+        <label class="top">Storm Region: 
+          <select name="stormregion">
+            <option selected="selected" disabled="disabled">Select Region</option>
+            <option value="Bennington">Bennington</option>
+            <option value="Fish Haven">Fish Haven</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Thatcher">Thatcher</option>
+          </select>
+        </label>
+        <div class="danger">User In-Danger?
+          <label class="sbs"><input type="radio" name="danger" value="yes"> YES!</label>
+          <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+          <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+        </div>
+        <label class="top">Additional Information or Comments? <textarea name="addinfo" id="addinfo" cols="30" rows="10"></textarea></label>
       </fieldset>
+      <button type="submit" class="submit" form="form" formaction="thanks.html" name="reportbutton">Report Weather</button>
     </form>
+      <figure class="rainbow">
+        <img src="images/rainbow-reported.webp" alt="A thunderstorm with a rainbow.">
+        <figcaption>A thunderstorm with a rainbow.</figcaption>
+      </figure>
+      <figure class="thunderstorm">
+        <img src="images/thunderstorm-reported.webp" alt="A thunderstorm with a lot of lightning">
+        <figcaption>A strong thunderstorm with a lot of lightning.</figcaption>
+      </figure>
   </main>
   <footer>
     <section>
@@ -97,7 +140,6 @@
       <source media="(min-width: 940px)" srcset="images/mapzoomed70-370.webp">
       <img src="images/mapzoomed.webp" alt="The location of Tri-County News office in Preston, Idaho.">
     </picture>
-    
     <p class="visit"><span class="lastvisit"></span></p>
     <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
   </footer>

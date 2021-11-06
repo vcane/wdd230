@@ -112,6 +112,7 @@ h2 {
   font-size: 1.25rem;
   padding-bottom: 0.5rem;
   text-align: center;
+  grid-column: 1 / 3;
 }
 
 h3 {
@@ -279,4 +280,84 @@ figure {
 figcaption {
   padding: 0.5rem 0;
   margin-bottom: 0.75rem;
+}
+
+form fieldset {
+  margin: 1rem 0;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  background-color: #E8D5C3;
+  box-shadow: 0 0 0.5rem 0.5rem #404040;
+  border: 1px solid #404040;
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 1rem;
+  background-color: #E8D5C3;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 0.25rem;
+}
+
+form label.top,
+form div label,
+form div.danger {
+  display: block;
+  padding: 0.75rem 0;
+
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  color: #404040;
+  border: 1px solid #404040;
+  border-radius: 5px;
+}
+
+form div.danger {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+form div.danger label.sbs {
+  padding: 0.75rem; 
+}
+
+form label.top #severity {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+
+form label #severity {
+  padding: 0.25rem;
+}
+
+form button.submit {
+  display: block;
+  padding: 0.75rem;
+  color: #404040;
+  background-color: #E8D5C3;
+  border: 3px solid #404040;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+}
+
+form label.top :required {
+  border: 2px solid red;
+}
+
+form label.top :required:valid {
+  border: 2px solid green;
+}
+
+figure.rainbow, figure.thunderstorm {
+  display: none;
 }
