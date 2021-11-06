@@ -361,3 +361,7 @@ form label.top :required:valid {
 figure.rainbow, figure.thunderstorm {
   display: none;
 }
+
+.thanks {
+  display: block;
+}
