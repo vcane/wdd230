@@ -10,13 +10,15 @@ table {
   box-shadow: 10px 10px 0.25rem 0.25rem lightgray;
 }
 
-td, th {
+td,
+th {
   text-align: center;
   border: 0.5px black solid;
   padding: 0.75rem;
 }
 
-#title, tfoot td {
+th[scope=colgroup],
+tfoot td {
   background-color: #7fb9c2;
 }
 
@@ -24,7 +26,7 @@ tfoot {
   font-size: 0.8rem;
 }
 
-#title {
+th[scope=colgroup] {
   font-size: 1.5rem;
   font-weight: bolder;
 }
@@ -37,13 +39,10 @@ tbody tr:nth-child(odd) {
   background-color: #e7f0ed;
 }
 
-.col-headers, .goal {
+th[scope=col],
+#goal {
   background-color: #628ca6;
   color: white;
   font-weight: bolder;
   font-size: 1.25rem;
-}
-
-.italic {
-  font-style: italic;
 }
