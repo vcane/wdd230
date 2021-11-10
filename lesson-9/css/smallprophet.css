@@ -1,0 +1,42 @@
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  line-height: 1.15;
+  text-align: center;
+}
+
+div.card {
+  display: block;
+  padding: 1.25rem;
+}
+
+section {
+  background-color: #D4D1E8;
+  margin: 10px auto;
+  padding: 0.5rem 1.25rem;
+  width: 70%;
+  border: 1px solid #4C429E;
+}
+
+h1, h2 {
+  color: #4C429E;
+  font-family: 'Playfair Display', serif;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+p {
+  color: black;
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+  box-shadow: 0 0 0.5rem 0.5rem #404040;
+}
+
+footer {
+  padding: 0.75rem;
+}
