@@ -5,6 +5,7 @@ body {
   margin: 0 auto;
   line-height: 1.15;
   text-align: center;
+  font-size: 16px;
 }
 
 div.card {
@@ -20,16 +21,26 @@ section {
   border: 1px solid #4C429E;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #4C429E;
   font-family: 'Playfair Display', serif;
   margin: 0.5rem 0;
   padding: 0.5rem 0;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
 p {
   color: black;
   margin: 0.5rem 0;
+  font-size: 0.95rem;
 }
 
 img {

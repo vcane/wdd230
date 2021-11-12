@@ -26,8 +26,16 @@
     padding: 0.5rem 1.25rem;
   }
 
-    section:nth-child(2) {
+  section:nth-child(2) {
     padding: 1.5rem 1.25rem;
+  }
+
+  section:nth-child(14) {
+    padding: 0.8rem 1.25rem;
+  }
+
+  section:nth-child(16) {
+    padding: 0.35rem 1.25rem;
   }
 
 }

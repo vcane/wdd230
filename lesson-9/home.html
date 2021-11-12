@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Tri-County News provides reliable and excellent coverage of the Preston, Soda Springs, and Fish Haven region.">
-  <title>Tri-County News | Storm Center</title>
+    content="Tri-County News provides reliable and excellent coverage of the Preston, Soda Springs, and Fish Haven region. The Home page displays ">
+  <title>Tri-County News | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
@@ -20,6 +20,7 @@
   <script defer src="js/button.js"></script>
   <script defer src="js/date.js"></script>
   <script defer src="js/localstorage.js"></script>
+  <script src="js/homepage.js"></script>
 </head>
 
 <body>
@@ -32,6 +33,20 @@
       <div class="motto">Reliable News for the Region</div>
     </section>
   </header>
+  <div class="homeherocontainer">
+    <picture class="homeheroimg">
+      <img src="images/mountainhero.webp" alt="A valley with mountains in the background.">
+    </picture>
+    <section class="action">
+      <h2>
+        Weather Reporting
+      </h2>
+      <p>
+        Help your community by reporting a weather event in your area.
+      </p>
+      <a href="../lesson-8/stormcenter.html" class="button">Report Weather</a>
+    </section>
+  </div>
   <nav>
     <ul class="nav-list">
       <li><a class="menu" href="#">Menu</a></li>
@@ -43,11 +58,8 @@
       <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
     </ul>
   </nav>
- 
-  <main>
-    <picture>
-      <img src="images/mountainhero.webp" alt="A valley with mountains in the background.">
-    </picture>
+  <main class="homemain">
+    <div class="sections"></div>
   </main>
   <footer>
     <section>

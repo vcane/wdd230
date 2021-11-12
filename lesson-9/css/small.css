@@ -326,7 +326,7 @@ form div.danger {
 }
 
 form div.danger label.sbs {
-  padding: 0.75rem; 
+  padding: 0.75rem;
 }
 
 form label.top #severity {
@@ -358,10 +358,75 @@ form label.top :required:valid {
   border: 2px solid green;
 }
 
-figure.rainbow, figure.thunderstorm {
+figure.rainbow,
+figure.thunderstorm {
   display: none;
 }
 
 .thanks {
   display: block;
+}
+
+div.sections {
+  margin: 0 auto;
+}
+
+div.sections section {
+  display: block;
+  width: 100%;
+  background-color: #E8D5C3;
+  text-align: center;
+  padding-top: 0.5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+div.sections section img {
+  width: 100%;
+}
+
+.homemain {
+  padding: 0;
+}
+
+.action {
+  background-color: #E8D5C3;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.action h2,
+.action p {
+  margin: 0;
+  padding: 0.25rem;
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: #EDB27B;
+  padding: 0.75rem;
+  background-color: #404040;
+  border-radius: 0.75rem;
+  margin: 0.25rem 0;
+}
+
+a.button:hover {
+  color: #404040;
+  background-color: #EDB27B;
+}
+
+.homeheroimg img {
+  width: 100%;
+}
+
+.homeherocontainer {
+  background-color: #E8D5C3;
+}
+
+div.sections section p, div.sections section h2 {
+  margin: 0;
+  padding: 0.5rem;
 }
