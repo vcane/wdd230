@@ -103,6 +103,12 @@
     height: 30px;
   }
 
+  #copyright {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+  }
+
   .zoomed {
     display: block;
     grid-column: 1 / 2;
@@ -143,6 +149,47 @@
 
   form fieldset {
     padding: 0.5rem 1.75rem 0.5rem 0.5rem;
+  }
+
+  div.homeherocontainer {
+    position: relative;
+  }
+
+  div.homeherocontainer section.action {
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 35%;
+    background-color: rgba(232, 213, 195, 0.7);
+  }
+
+  .homemain {
+    padding: 1rem;
+  }
+
+  div.sections {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.sections section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  div.sections section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  div.sections section img {
+    width: 50%;
+    padding: 0.1rem;
+    border-radius: 3rem 1rem;
+    box-shadow: 0 0 0.5rem 0.25rem #404040;
+    background-color: #404040;
   }
 
 }

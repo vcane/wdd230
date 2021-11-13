@@ -80,6 +80,7 @@ nav ul li a {
 nav a:hover {
   background-color: #E8D5C3;
   color: #404040;
+  border-top: 1px solid #404040;
 }
 
 .active {
@@ -376,7 +377,7 @@ div.sections section {
   width: 100%;
   background-color: #E8D5C3;
   text-align: center;
-  padding-top: 0.5rem;
+  /*padding-top: 0.5rem;*/
   height: auto;
   margin-bottom: 1rem;
 }
@@ -420,13 +421,30 @@ a.button:hover {
 
 .homeheroimg img {
   width: 100%;
+  margin-bottom: -0.25rem;
 }
 
 .homeherocontainer {
   background-color: #E8D5C3;
 }
 
-div.sections section p, div.sections section h2 {
+div.sections section p,
+div.sections section h2 {
   margin: 0;
   padding: 0.5rem;
+}
+
+div.sections section div {
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+article {
+  background-color: #E8D5C3;
+  padding: 1rem;
+}
+
+article p, article h2 {
+  padding-bottom: 1rem;
+  margin: 0;
 }
