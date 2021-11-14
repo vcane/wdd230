@@ -442,9 +442,11 @@ div.sections section div {
 article {
   background-color: #E8D5C3;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-article p, article h2 {
+article p,
+article h2 {
   padding-bottom: 1rem;
   margin: 0;
 }
