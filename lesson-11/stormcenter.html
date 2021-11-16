@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Tri-County News provides reliable and excellent coverage of the Preston, Soda Springs, and Fish Haven region.">
+  <title>Tri-County News | Storm Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
+    rel="stylesheet" media="all">
+  <link rel="stylesheet" href="storm-css/normalize.css" media="all">
+  <link rel="stylesheet" href="storm-css/small.css" media="all">
+  <link rel="stylesheet" href="storm-css/medium.css" media="all">
+  <link rel="stylesheet" href="storm-css/large.css" media="all">
+  <link rel="shortcut icon" href="red-favicon.ico">
+  <script defer src="js/button.js"></script>
+  <script defer src="js/date.js"></script>
+  <script defer src="js/localstorage.js"></script>
+  <script defer src="js/range.js"></script>
+</head>
+
+<body>
+  <header>
+    <picture>
+      <img src="images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
+    </picture>
+    <section class="headings">
+      <h1>Tri-County News</h1>
+      <div class="motto">Reliable News for the Region</div>
+    </section>
+  </header>
+  <nav>
+    <ul class="nav-list">
+      <li><a class="menu" href="#">Menu</a></li>
+      <li><a href="../lesson-9/home.html">Home</a></li>
+      <li><a href="../lesson6/preston-6.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+      <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Storm Center</h2>
+    <form method="get" action="thanks.html" id="form">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label class="top">First Name: <input type="text" name="fname" required pattern="[A-Za-z]+" minlength="2" title="Please enter your first name using capital or lowercase letters with a minimum of two letters."></label>
+        <label class="top">Last Name: <input type="text" name="lname" required pattern="[A-Za-z]+" minlength="2" title="Please enter your last name using capital or lowercase letters with a minimum of two letters."></label>
+        <label class="top">Email: <input type="email" name="email" placeholder="name@gmail.com"></label>
+        <label class="top">Phone number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required title="Please enter your phone number with area code following this format: 123-456-7890"></label>
+        <label class="top">Zip Code: <input type="number" name="zipcode" required title="Please enter your zip code. Five numeric characters required. No dashes or parentheses required."></label>
+      </fieldset>
+      <fieldset>
+        <legend>Storm Information</legend>
+        <label class="top">Storm Date: <input type="date" name="stormdate"></label>
+        <label class="top">Storm Type: <input list="stormtypes" name="stormtype"></label>
+        <datalist id="stormtypes">
+          <option value="">Please Select</option>
+          <option value="Flashflood">Flashflood</option>
+          <option value="Hail">Hail</option>
+          <option value="Hurricane">Hurricane</option>
+          <option value="Thunderstorm">Thunderstorm</option>
+          <option value="Tornado">Tornado</option>
+        </datalist>
+        <label class="top">Storm Severity: <span class="stormseverity"> </span><input type="range" id="severity" name="severity" list="tickmarks" min="1" max="10" oninput="adjustRating(this.value)" ></label>
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+          <option value="6"></option>
+          <option value="7"></option>
+          <option value="8"></option>
+          <option value="9"></option>
+          <option value="10"></option>
+        </datalist>
+        <label class="top">Storm Region: 
+          <select name="stormregion">
+            <option selected="selected" disabled="disabled">Select Region</option>
+            <option value="Bennington">Bennington</option>
+            <option value="Fish Haven">Fish Haven</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Thatcher">Thatcher</option>
+          </select>
+        </label>
+        <div class="danger">User In-Danger?
+          <label class="sbs"><input type="radio" name="danger" value="yes"> YES!</label>
+          <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+          <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+        </div>
+        <label class="top">Additional Information or Comments? <textarea name="addinfo" id="addinfo" cols="30" rows="10"></textarea></label>
+      </fieldset>
+      <button type="submit" class="submit" form="form" formaction="thanks.html" name="reportbutton">Report Weather</button>
+    </form>
+      <figure class="rainbow">
+        <img src="images/rainbow-reported.webp" alt="A thunderstorm with a rainbow.">
+        <figcaption>A thunderstorm with a rainbow.</figcaption>
+      </figure>
+      <figure class="thunderstorm">
+        <img src="images/thunderstorm-reported.webp" alt="A thunderstorm with a lot of lightning">
+        <figcaption>A strong thunderstorm with a lot of lightning.</figcaption>
+      </figure>
+  </main>
+  <footer>
+    <section>
+      <h3>Contact Information</h3>
+      <p>Virgil Cane</p>
+      <address>
+        <a href="https://www.google.com/maps/place/122+N+State+St,+Preston,+ID+83263/@42.0982864,-111.8755277,515m/data=!3m1!1e3!4m5!3m4!1s0x8754f7ec3fd44b75:0xa6697de0f851a52!8m2!3d42.0988475!4d-111.8760719"
+          rel="noopener" target="_blank">122 N. State St.
+          Preston, ID 83263
+        </a>
+      </address>
+      <p>(123) 456-7890</p>
+      <a href="mailto:virgil@tricountynews.org">virgil@tricountynews.org</a>
+      <div class="social">
+        <img src="images/twittericon.png" alt="twitter logo" />
+        <img src="images/instagramicon.png" alt="instgram logo" />
+        <img src="images/facebookicon.png" alt="facebook logo" />
+      </div>
+    </section>
+    <picture class="map">
+      <source media="(max-width: 510px)" srcset="images/map520-70.webp">
+      <source media="(max-width: 939px)" srcset="images/map520-70.webp">
+      <source media="(min-width: 940px)" srcset="images/map520-70.webp">
+      <img src="images/map-org.webp"
+        alt="A map displaying the location of Preston, Soda Springs and Fish Haven in southeast Idaho.">
+    </picture>
+    <picture class="zoomed">
+      <source media="(max-width: 510px)" srcset="images/mapzoomed70-370.webp">
+      <source media="(max-width: 939px)" srcset="images/mapzoomed70-370.webp">
+      <source media="(min-width: 940px)" srcset="images/mapzoomed70-370.webp">
+      <img src="images/mapzoomed.webp" alt="The location of Tri-County News office in Preston, Idaho.">
+    </picture>
+    <p class="visit"><span class="lastvisit"></span></p>
+    <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+  </footer>
+</body>
+
+</html>

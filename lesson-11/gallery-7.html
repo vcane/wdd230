@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Virgil Cane">
+  <meta name="description"
+    content="Tri-County News provides reliable and excellent coverage of the Preston, Soda Springs, and Fish Haven region. The Gallery page displays photographs of weather events submitted by our community members.">
+  <title>Tri-County News | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
+    rel="stylesheet" media="all">
+  <link rel="stylesheet" href="css/normalize.css" media="all">
+  <link rel="stylesheet" href="css/small.css" media="all">
+  <link rel="stylesheet" href="css/medium.css" media="all">
+  <link rel="stylesheet" href="css/large.css" media="all">
+  <link rel="shortcut icon" href="red-favicon.ico">
+  <script defer src="js/button.js"></script>
+  <script defer src="js/date.js"></script>
+  <script defer src="js/lazyload.js"></script>
+  <script defer src="js/localstorage.js"></script>
+</head>
+
+<body>
+  <header>
+    <picture>
+      <img src="images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
+    </picture>
+    <section class="headings">
+      <h1>Tri-County News</h1>
+      <div class="motto">Reliable News for the Region</div>
+    </section>
+  </header>
+  <nav>
+    <ul class="nav-list">
+      <li><a class="menu" href="#">Menu</a></li>
+      <li><a href="../lesson-9/home.html">Home</a></li>
+      <li><a href="../lesson6/preston-6.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery-7.html" class="active">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>
+      Weather Gallery
+    </h2>
+    <div class="container">
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/cloudsatsunset.webp" alt="Cloudy sunset over the beach.">
+        <figcaption>Cloudy sunset over a beach.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/cloudyskyovermtns.webp"
+          alt="Clouds over snow capped mountains.">
+        <figcaption>Sunset reflecting off clouds over snow-capped mountains.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/darkclouds.webp" alt="Dark clouds after sunset.">
+        <figcaption>Dark clouds during the day.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/extremelightning.webp"
+          alt="Thunderstorm with extreme amount of lightning over a city.">
+        <figcaption>Extreme amount of lightning during a thunderstorm at night.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/snow.webp"
+          alt="A sunny morning with fresh snow from the night before.">
+        <figcaption>A fresh layer of snow on a frigid, sunny morning.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/sunnycloudyday.webp"
+          alt="A sunny day with clouds in the distance over some mountains.">
+        <figcaption>A sunny day with clouds in distance over mountains.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/supercellatdusk.webp"
+          alt="A colorful supercell thunderstorm at dusk.">
+        <figcaption>A supercell thunderstorm reflecting the colors of sunset.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/supercellovercrops.webp"
+          alt="A supercell thunderstorm with cropfield in the foreground.">
+        <figcaption>A supercell thunderstorm in the distance near cropland.</figcaption>
+      </figure>
+      <figure class="lastfigure">
+        <img src="images/placeholder.webp" data-src="images/thunderstormovercity.webp"
+          alt="A thunderstorm over a city with a single lightning strike.">
+        <figcaption>A thunderstorm moving into the city during sunset.</figcaption>
+      </figure>
+    </div>
+  </main>
+  <footer>
+    <section>
+      <h3>Contact Information</h3>
+      <p>Virgil Cane</p>
+      <address>
+        <a href="https://www.google.com/maps/place/122+N+State+St,+Preston,+ID+83263/@42.0982864,-111.8755277,515m/data=!3m1!1e3!4m5!3m4!1s0x8754f7ec3fd44b75:0xa6697de0f851a52!8m2!3d42.0988475!4d-111.8760719"
+          rel="noopener" target="_blank">122 N. State St.
+          Preston, ID 83263
+        </a>
+      </address>
+      <p>(123) 456-7890</p>
+      <a href="mailto:virgil@tricountynews.org">virgil@tricountynews.org</a>
+      <div class="social">
+        <img src="images/twittericon.png" alt="twitter logo" />
+        <img src="images/instagramicon.png" alt="instgram logo" />
+        <img src="images/facebookicon.png" alt="facebook logo" />
+      </div>
+    </section>
+    <picture class="map">
+      <source media="(max-width: 510px)" srcset="images/map520-70.webp">
+      <source media="(max-width: 939px)" srcset="images/map520-70.webp">
+      <source media="(min-width: 940px)" srcset="images/map520-70.webp">
+      <img src="images/map-org.webp"
+        alt="A map displaying the location of Preston, Soda Springs and Fish Haven in southeast Idaho.">
+    </picture>
+    <picture class="zoomed">
+      <source media="(max-width: 510px)" srcset="images/mapzoomed70-370.webp">
+      <source media="(max-width: 939px)" srcset="images/mapzoomed70-370.webp">
+      <source media="(min-width: 940px)" srcset="images/mapzoomed70-370.webp">
+      <img src="images/mapzoomed.webp" alt="The location of Tri-County News office in Preston, Idaho.">
+    </picture>
+    
+    <p class="visit"><span class="lastvisit"></span></p>
+    <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+  </footer>
+</body>
+
+</html>
