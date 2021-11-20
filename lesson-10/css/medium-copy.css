@@ -68,6 +68,7 @@
 
   .flex img {
     width: 70px;
+    /*padding-top: 0.5rem;*/
   }
 
   .col-head,
@@ -91,13 +92,33 @@
   .attribution {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+    /*text-align: center;*/
   }
 
   footer section {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     align-self: center;
+    /*height: 150px;
+    */
   }
+
+  /*.social {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: end;
+  }*/
+
+  /*.social img {
+    width: 45px;
+  }*/
+
+  /*footer p {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: center;
+    height: 30px;
+  }*/
 
   #copyright {
     grid-column: 2 / 3;
@@ -107,10 +128,15 @@
 
   .zoomed {
     display: block;
+    /*grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 0;
+    text-align: center;*/
   }
 
   .zoomed img {
     width: 100%;
+    /*height: auto;*/
   }
 
   .container {

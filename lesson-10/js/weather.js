@@ -11,7 +11,7 @@ fetch(currweatherURL)
     document.querySelector('.cloudiness').textContent = currweather.weather[0].description;
     let f;
     if (currweather.main.temp <= 50 && currweather.wind.speed > 3) {
-      f = `${Math.round((35.74 + (0.6215 * currweather.main.temp) - (35.75 * Math.pow(currweather.wind.speed, 0.16)) + (0.4275 * currweather.main.temp * Math.pow(currweather.wind.speed, 0.16)))) * 10 / 10}`;
+      f = `${Math.round((35.74 + (0.6215 * currweather.main.temp) - (35.75 * Math.pow(currweather.wind.speed, 0.16)) + (0.4275 * currweather.main.temp * Math.pow(currweather.wind.speed, 0.16)))) * 10 / 10}°F`;
     } else {
       f = "N/A";
     }

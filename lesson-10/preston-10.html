@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Virgil Cane">
   <meta name="description"
-    content="Tri-County News provides reliable and excellent coverage of the Preston, Soda Springs, and Fish Haven region. The Preston page provides community event information, current weather, forecasted weather, and articles regarding community events.">
+    content="Tri-County News provides reliable coverage of the Preston, Soda Springs, and Fish Haven region. The Preston page provides community event information, current and forecasted weather, and articles regarding community events.">
   <title>Tri-County News | Preston</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
 
 <body>
   <div class="pancakes">
-    <p>🥞Saturday = Preston Pancakes in the Park!🥞</p>
+    <p>🥞 Preston Pancakes in the Park! 🥞</p>
     <p>9 a.m. Saturday at the city park.</p>
   </div>
   <header>
@@ -49,55 +49,55 @@
       <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
     </ul>
   </nav>
-  <main>
+  <div class="herocontainer">
+    <picture class="heroimg">
+      <source media="(max-width: 510px)" srcset="images/mountaintown734x350.webp">
+      <source media="(max-width: 939px)" srcset="images/mountaintown845x417.webp">
+      <source media="(min-width: 940px)" srcset="images/mountaintown960x425.webp">
+      <img src="images/mountaintownorg1024x488.webp"
+        alt="A green, grassy field with trees and mountains in the background on a sunny day.">
+    </picture>
     <h2>Preston, Idaho</h2>
-    <div class="herocontainer">
-      <picture class="heroimg">
-        <source media="(max-width: 510px)" srcset="images/franklinsmall50.webp">
-        <source media="(max-width: 939px)" srcset="images/franklinmed70.webp">
-        <source media="(min-width: 940px)" srcset="images/franklinlarge70.webp">
-        <img src="images/franklinorg70.webp"
-          alt="A green, grassy field with trees and mountains in the background on a sunny day.">
-      </picture>
-      <section class="weather">
-        <h3>Weather Summary</h3>
-        <p class="left">Currently:</p>
-        <p class="right"><span class="cloudiness"></span></p>
-        <p class="left">Current temp:</p>
-        <p class="right"><span class="t"></span>°F</p>
-        <p class="left">Wind Chill:</p>
-        <p class="right"><span class="f"></span></p>
-        <p class="left">Humidity:</p>
-        <p class="right"><span class="humidity"></span></p>
-        <p class="left">Wind Speed:</p>
-        <p class="right"><span class="s"></span> mph</p>
-      </section>
-    </div>
+    <section class="weather">
+      <h3>Weather Summary</h3>
+      <p class="left">Currently:</p>
+      <p class="right"><span class="cloudiness"></span></p>
+      <p class="left">Current temp:</p>
+      <p class="right"><span class="t"></span>°F</p>
+      <p class="left">Wind Chill:</p>
+      <p class="right"><span class="f"></span></p>
+      <p class="left">Humidity:</p>
+      <p class="right"><span class="humidity"></span></p>
+      <p class="left">Wind Speed:</p>
+      <p class="right"><span class="s"></span> MPH</p>
+    </section>
+  </div>
+  <main>
     <h3 class="forecast">Five Day Forecast</h3>
     <div class="flex">
       <div class="flex-col">
         <span class="col-head" id="day1"></span>
-        <img src="" alt="" id="icon1">
+        <img src="#" alt="#" id="icon1">
         <span class="condition" id="temp1"></span>
       </div>
       <div class="flex-col">
         <span class="col-head" id="day2"></span>
-        <img src="" alt="" id="icon2">
+        <img src="#" alt="#" id="icon2">
         <span class="condition" id="temp2"></span>
       </div>
       <div class="flex-col">
         <span class="col-head" id="day3"></span>
-        <img src="" alt="" id="icon3">
+        <img src="#" alt="#" id="icon3">
         <span class="condition" id="temp3"></span>
       </div>
       <div class="flex-col">
         <span class="col-head" id="day4"></span>
-        <img src="" alt="" id="icon4">
+        <img src="#" alt="#" id="icon4">
         <span class="condition" id="temp4"></span>
       </div>
       <div class="flex-col">
         <span class="col-head" id="day5"></span>
-        <img src="" alt="" id="icon5">
+        <img src="#" alt="#" id="icon5">
         <span class="condition" id="temp5"></span>
       </div>
     </div>
@@ -141,6 +141,11 @@
       </address>
       <p>(123) 456-7890</p>
       <a href="mailto:virgil@tricountynews.org">virgil@tricountynews.org</a>
+      <div class="social">
+        <img src="images/twittericon.png" alt="twitter logo" />
+        <img src="images/instagramicon.png" alt="instgram logo" />
+        <img src="images/facebookicon.png" alt="facebook logo" />
+      </div>
 
     </section>
     <picture class="map">
@@ -156,18 +161,10 @@
       <source media="(min-width: 940px)" srcset="images/mapzoomed70-370.webp">
       <img src="images/mapzoomed.webp" alt="The location of Tri-County News office in Preston, Idaho.">
     </picture>
-    <div class="social">
-      <a href="https://twitter.com/" target="_blank" rel="noopener">
-        <img src="images/twittericon.png" alt="twitter logo" />
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-        <img src="images/instagramicon.png" alt="instgram logo" />
-      </a>
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-        <img src="images/facebookicon.png" alt="facebook logo" />
-      </a>
+    <div class="attribution">
+      <p>Weather data obtained from <a href="https://openweathermap.org/">openweather.org.</a></p>
+      <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
     </div>
-    <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
   </footer>
 </body>
 
