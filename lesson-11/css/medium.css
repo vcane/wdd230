@@ -11,6 +11,10 @@
     font-size: 1rem;
   }
 
+  main {
+    padding: 0.25rem 2rem;
+  }
+
   .pancakes p {
     margin: 0;
     padding: 0.5rem;
@@ -64,6 +68,7 @@
     top: 0.25rem;
     left: 0.25rem;
     background-color: rgba(232, 213, 195, 0.7);
+    border: none;
   }
 
   .flex img {
@@ -76,10 +81,10 @@
     font-size: 1rem;
   }
 
-  .kids img {
+  .kids img, .heavysnowfall {
     float: left;
     width: 50%;
-    margin: 0 1rem 0.5rem 0;
+    margin: 1rem;
   }
 
   footer {
@@ -139,7 +144,7 @@
   }
 
   form fieldset {
-    padding: 0.5rem 1.75rem 0.5rem 0.5rem;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
   }
 
   div.homeherocontainer {
@@ -175,12 +180,20 @@
     flex-direction: row-reverse;
   }
 
-  div.sections section img {
+  div.sections section img, .heavysnowfall {
     width: 50%;
     padding: 0.1rem;
     border-radius: 3rem 1rem;
     box-shadow: 0 0 0.5rem 0.25rem rgb(64, 64, 64);
     background-color: rgb(64, 64, 64);
+  }
+
+  .articlepara {
+    line-height: 1.5;
+  }
+
+  form div.danger label.sbs {
+    padding: 1rem;
   }
 
 }

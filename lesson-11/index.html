@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
     rel="stylesheet" media="all">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
   <link rel="stylesheet" href="css/normalize.css" media="all">
   <link rel="stylesheet" href="css/small.css" media="all">
   <link rel="stylesheet" href="css/medium.css" media="all">
@@ -19,14 +20,13 @@
   <link rel="shortcut icon" href="red-favicon.ico">
   <script defer src="js/button.js"></script>
   <script defer src="js/date.js"></script>
-  <script defer src="js/localstorage.js"></script>
   <script src="js/homepage.js"></script>
 </head>
 
 <body>
   <header>
     <picture>
-      <img src="images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
+    <img src="images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
     </picture>
     <section class="headings">
       <h1>Tri-County News</h1>
@@ -60,8 +60,17 @@
   </nav>
   <main class="homemain">
     <div class="sections"></div>
+    <article class="homearticle">
+      <h2>Recent Heavy Snowfall In Southeast Idaho</h2>
+      <img class="heavysnowfall" src="images/heavysnowfall.webp" alt="Mountains after heavy snowfall.">
+              
+      <p class="articlepara">Recent heavy snowstorm dropped 24 to 36 inches in the Southeast region of Idaho during a two day period this week. The snowstorm caused multiple problems throughout the region. Several highways were closed to prevent accidents and stranded motorists. Several small towns and rural neighborhoods reported electrical outages. All electrical outages were resolved and power restored to the areas. Many schools canceled classes on Thursday and Friday due to power outages and roads required road clearing.</p>
 
+      <p class="articlepara">The heavy snowstorm brought much excitement to snow enthusiasts in the region. Several ski resorts in the area have reported that the storm dropped enough snow to allow an early opening day. With the recent snowfall and snow making, many resorts report that their snow base is between 60 to 84 inches deep. All runs accessible to groomers have been groomed and there is 36 inches of new powder. Ski resorts state that ski lift tickets are available on their websites or starting at Monday morning on opening day.</p>
+    </article>
+    
   </main>
+  
   <footer>
     <section>
       <h3>Contact Information</h3>
@@ -93,9 +102,10 @@
       <source media="(min-width: 940px)" srcset="images/mapzoomed70-370.webp">
       <img src="images/mapzoomed.webp" alt="The location of Tri-County News office in Preston, Idaho.">
     </picture>
-    <p class="visit"><span class="lastvisit"></span></p>
-    <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
-    <p class="wireframes"><a href="home-wireframes.html">Home Page Wireframes</a></p>
+    <div class="attribution">
+      <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+      <p class="wireframes"><a href="home-wireframes.html">Home Page Wireframes</a></p>
+    </div>
   </footer>
 </body>
 

@@ -191,4 +191,9 @@
     align-self: flex-end;
     margin-bottom: 11rem;
   }
+
+  input[type=radio] {
+    width: 15px;
+    height: 15px;
+  }
 }
