@@ -17,7 +17,7 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
         };
       }
 
-      /*else if (town.name === 'Soda Springs') {
+      else if (town.name === 'Soda Springs') {
         for (i=0; i < townname.length; i++) {
           let para = document.createElement('p');
           para.textContent = `${town.events[i]}`;
@@ -31,7 +31,7 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
           para.textContent = `${town.events[i]}`;
           document.querySelector('div.fhevents').appendChild(para);
         };
-      }*/
+      }
 
       /*else if (town.name === 'Soda Springs') {
         townname.forEach((x) => {
