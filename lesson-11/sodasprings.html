@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
     rel="stylesheet" media="all">
   <link rel="stylesheet" href="../css/normalize.css" media="all">
-  
+
   <link href="css/small.css" rel="stylesheet" media="all">
   <link href="css/medium.css" rel="stylesheet" media="all">
   <link href="css/large.css" rel="stylesheet" media="all">
@@ -23,6 +23,7 @@
   <script defer src="js/date.js"></script>
   <script defer src="js/weather.js"></script>
   <script defer src="js/events.js"></script>
+  <!-- <script defer src="js/test.js"></script> -->
 </head>
 
 <body>
@@ -51,10 +52,9 @@
       <source media="(max-width: 510px)" srcset="images/mountaintown734x350.webp">
       <source media="(max-width: 939px)" srcset="images/mountaintown845x417.webp">
       <source media="(min-width: 940px)" srcset="images/mountaintown960x425.webp">
-      <img src="images/mountaintownorg1024x488.webp"
-        alt="A photo of a town with mountains in the background.">
+      <img src="images/mountaintownorg1024x488.webp" alt="A photo of a town with mountains in the background.">
     </picture>
-    <h2>Preston, Idaho</h2>
+    <h2>Soda Springs, Idaho</h2>
     <section class="weather">
       <h3>Weather Summary</h3>
       <p class="left">Currently:</p>
@@ -98,6 +98,14 @@
         <span class="condition" id="temp5"></span>
       </div>
     </div>
+    <section class="events">
+      <h3>
+        Upcoming Events
+      </h3>
+      <div id="events"></div>
+
+
+    </section>
     <article>
       <h3 class="park">Annual Preston Community Park</h3>
       <h3 class="tot">Trunk or Treat</h3>
