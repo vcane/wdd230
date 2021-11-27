@@ -7,14 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Virgil Cane">
   <meta name="description"
-    content="Tri-County News provides reliable coverage of the Preston, Soda Springs, and Fish Haven region. The Soda Springs page provides community event information, current and forecasted weather, and articles regarding community events.">
+    content="The page provides news and weather for Soda Springs. Freelance writers in the community provide news articles about local events. The weather data is compiled and provided by a local meteorologist.">
   <title>Tri-County News | Soda Springs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
     rel="stylesheet" media="all">
-  <link rel="stylesheet" href="../css/normalize.css" media="all">
-
+  <link rel="stylesheet" href="css/normalize.css" media="all">
   <link href="css/small.css" rel="stylesheet" media="all">
   <link href="css/medium.css" rel="stylesheet" media="all">
   <link href="css/large.css" rel="stylesheet" media="all">
@@ -22,41 +21,27 @@
   <script defer src="js/button.js"></script>
   <script defer src="js/date.js"></script>
   <script defer src="js/weather.js"></script>
-  <script defer src="js/events.js"></script>
-  <!-- <script defer src="js/test.js"></script> -->
 </head>
 
 <body>
   <header>
     <picture>
-      <img src="../lesson3/images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
+      <img src="images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
     </picture>
     <section class="headings">
       <h1>Tri-County News</h1>
       <div class="motto">Reliable News for the Region</div>
     </section>
   </header>
-  <nav>
-    <ul class="nav-list">
-      <li><a class="menu" href="#">Menu</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="preston.html">Preston</a></li>
-      <li><a href="sodasprings.html" class="active">Soda Springs</a></li>
-      <li><a href="fishhaven.html">Fish Haven</a></li>
-      <li><a href="stormcenter.html">Storm Center</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-    </ul>
-  </nav>
   <div class="herocontainer">
     <picture class="heroimg">
-      <source media="(max-width: 510px)" srcset="images/mountaintown734x350.webp">
-      <source media="(max-width: 939px)" srcset="images/mountaintown845x417.webp">
-      <source media="(min-width: 940px)" srcset="images/mountaintown960x425.webp">
-      <img src="images/mountaintownorg1024x488.webp" alt="A photo of a town with mountains in the background.">
+      <source media="(max-width: 510px)" srcset="images/sshero750x352.webp">
+      <source media="(max-width: 939px)" srcset="images/sshero845x396.webp">
+      <source media="(min-width: 940px)" srcset="images/sshero960x450.webp">
+      <img src="images/sshero960x450.webp" alt="A mountain meadow with tall, snow-capped mountains in the background.">
     </picture>
-    <h2>Soda Springs, Idaho</h2>
     <section class="weather">
-      <h3>Weather Summary</h3>
+      <h2>Weather Summary</h2>
       <p class="left">Currently:</p>
       <p class="right"><span class="cloudiness"></span></p>
       <p class="left">Current temp:</p>
@@ -69,7 +54,25 @@
       <p class="right"><span class="s"></span> MPH</p>
     </section>
   </div>
+  <nav>
+    <ul class="nav-list">
+      <li><a class="menu" href="#">Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="sodasprings.html" class="active">Soda Springs</a></li>
+      <li><a href="fishhaven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
   <main>
+    <h2>Soda Springs, Idaho</h2>
+    <section class="events">
+      <h3>
+        Upcoming Events
+      </h3>
+      <div id="events"></div>
+    </section>
     <h3 class="forecast">Five Day Forecast</h3>
     <div class="flex">
       <div class="flex-col">
@@ -98,39 +101,30 @@
         <span class="condition" id="temp5"></span>
       </div>
     </div>
-    <section class="events">
-      <h3>
-        Upcoming Events
-      </h3>
-      <div id="events"></div>
-
-
-    </section>
+    
     <article>
-      <h3 class="park">Annual Preston Community Park</h3>
-      <h3 class="tot">Trunk or Treat</h3>
+      <h3 class="tot">Soda Days Festival On Main Street</h3>
       <picture class="kids">
-        <source media="(max-width: 510px)" srcset="images/kidsincostumes70small.webp">
-        <source media="(max-width: 939px)" srcset="images/kidsincostumesmed70.webp">
-        <source media="(min-width: 940px)" srcset="images/kidsincostumeslarge.webp">
-        <img src="images/kidsincostumes-org.webp" alt="Photo of several kids in different Halloween costumes.">
+        <source media="(max-width: 510px)" srcset="images/ssgeyser380x439.webp">
+        <source media="(max-width: 939px)" srcset="images/ssgeyser400x462.webp">
+        <source media="(min-width: 940px)" srcset="images/ssgeyser450x520.webp">
+        <img src="images/ssgeyser450x520.webp" alt="Photo of the famous Soda Springs geyser.">
       </picture>
-      <p>The Annual Preston Community Park Trunk or Treat will be held on Saturday, October 30<sup>th</sup> starting at
-        6:30 P.M.
-        Prepare your little pirates, superheroes, princesses, and unicorns to collect their year's worth of candy. Come
-        and decorate
-        your trunk with tricks and don't forget the treats! The annual event draws crowds from the surrounding area.
-        Vendors will be
-        be available if you decide you need a warm drink or some other treat. Community sponsors are also preparing
-        games for the kids.
-        A haunted maze will lead unsuspecting victims through the spooky haunted forest.
+      <p class="articlepara">Soda Days Festival occurs during the second week of November every year. The festival celebrates the discovery
+        of the Soda Springs Geyser on November 28, 1937. In late November of 1937, several local business men had an
+        idea to use a hot spring for a bath house. They began exploring for hot springs utilizing a drilling rig. The
+        drill bit hit a pocket of carbon dioxide which caused water to shoot 40 feet into the air. They promptly removed
+        the 3500 pound drill bit. By removing the bit, the full release of pressure caused the geyser to increase to 70
+        feet tall. It has been reported that a few weeks later the United States Secretary of the Interior requested
+        that the town turn off the geyser. He claimed it was causing the Old Faithful geyser to be off schedule. The
+        City of Soda Springs complied with the request and now the geyser is controlled to go off every hour on the
+        hour.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
+      <p class="articlepara">
+        The Soda Days Festival attracts people from the whole region even people from out of state. Main Street is
+        blocked at both ends and vendors align in the street. All kinds of food and drinks are available including
+        locally made soda from community members. Games and other activities are available in the city park located just
+        east of Main Street. Come join the festivities and see the geyser blow every hour!
       </p>
     </article>
   </main>

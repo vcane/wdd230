@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Virgil Cane">
   <meta name="description"
-    content="Tri-County News provides reliable and excellent coverage of the Preston, Soda Springs, and Fish Haven region. The Gallery page displays photographs of weather events submitted by our community members.">
+    content="The Gallery page displays photographs of weather events submitted by our community members throughout the area covered by Tri-County News.">
   <title>Tri-County News | Gallery</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,6 @@
   <script defer src="js/button.js"></script>
   <script defer src="js/date.js"></script>
   <script defer src="js/lazyload.js"></script>
-  <script defer src="js/localstorage.js"></script>
 </head>
 
 <body>
@@ -45,7 +44,7 @@
       <li><a href="gallery.html" class="active">Gallery</a></li>
     </ul>
   </nav>
-  <main>
+  <main class="gallery">
     <h2>
       Weather Gallery
     </h2>
@@ -57,41 +56,42 @@
       <figure>
         <img src="images/placeholder.webp" data-src="images/cloudyskyovermtns.webp"
           alt="Clouds over snow capped mountains.">
-        <figcaption>Sunset reflecting off clouds over snow-capped mountains.</figcaption>
+        <figcaption>Sunset reflecting off clouds.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/extremelightning.webp"
+          alt="Thunderstorm with extreme amount of lightning over a city.">
+        <figcaption>Extreme lightning</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/supercellovercrops.webp"
+          alt="A supercell thunderstorm with cropfield in the foreground.">
+        <figcaption>A thunderstorm over cropland.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/snow.webp"
+          alt="A sunny morning with fresh snow from the night before.">
+        <figcaption>A fresh layer of snow.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/thunderstormovercity.webp"
+          alt="A thunderstorm over a city with a single lightning strike.">
+        <figcaption>A thunderstorm over the city.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" data-src="images/supercellatdusk.webp"
+          alt="A colorful supercell thunderstorm at dusk.">
+        <figcaption>Colorful supercell thunderstorm</figcaption>
       </figure>
       <figure>
         <img src="images/placeholder.webp" data-src="images/darkclouds.webp" alt="Dark clouds after sunset.">
         <figcaption>Dark clouds during the day.</figcaption>
       </figure>
-      <figure>
-        <img src="images/placeholder.webp" data-src="images/extremelightning.webp"
-          alt="Thunderstorm with extreme amount of lightning over a city.">
-        <figcaption>Extreme amount of lightning during a thunderstorm at night.</figcaption>
-      </figure>
-      <figure>
-        <img src="images/placeholder.webp" data-src="images/snow.webp"
-          alt="A sunny morning with fresh snow from the night before.">
-        <figcaption>A fresh layer of snow on a frigid, sunny morning.</figcaption>
-      </figure>
-      <figure>
+      
+      <figure class="lastfigure">
         <img src="images/placeholder.webp" data-src="images/sunnycloudyday.webp"
           alt="A sunny day with clouds in the distance over some mountains.">
-        <figcaption>A sunny day with clouds in distance over mountains.</figcaption>
-      </figure>
-      <figure>
-        <img src="images/placeholder.webp" data-src="images/supercellatdusk.webp"
-          alt="A colorful supercell thunderstorm at dusk.">
-        <figcaption>A supercell thunderstorm reflecting the colors of sunset.</figcaption>
-      </figure>
-      <figure>
-        <img src="images/placeholder.webp" data-src="images/supercellovercrops.webp"
-          alt="A supercell thunderstorm with cropfield in the foreground.">
-        <figcaption>A supercell thunderstorm in the distance near cropland.</figcaption>
-      </figure>
-      <figure class="lastfigure">
-        <img src="images/placeholder.webp" data-src="images/thunderstormovercity.webp"
-          alt="A thunderstorm over a city with a single lightning strike.">
-        <figcaption>A thunderstorm moving into the city during sunset.</figcaption>
+        <figcaption>A sunny day with fluffy clouds.</figcaption>
       </figure>
     </div>
   </main>
@@ -126,9 +126,9 @@
       <source media="(min-width: 940px)" srcset="images/mapzoomed70-370.webp">
       <img src="images/mapzoomed.webp" alt="The location of Tri-County News office in Preston, Idaho.">
     </picture>
-    
-    <p class="visit"><span class="lastvisit"></span></p>
-    <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+    <div class="attribution">
+      <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+    </div>
   </footer>
 </body>
 

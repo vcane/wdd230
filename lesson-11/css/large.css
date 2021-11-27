@@ -15,10 +15,6 @@
     font-size: 1.25rem;
   }
 
-  main {
-    padding: 0.25rem 4rem;
-  }
-
   main.stormcenter {
     padding: 1rem 1.5rem 1.5rem 1.5rem;
     display: grid;
@@ -66,18 +62,12 @@
     padding: 1rem;
   }
 
-  .park,
-  .forecast {
-    margin: 2rem 0 0 0;
-  }
-
   .tot {
     margin: 0 0 0.75rem 0;
   }
 
   .flex img {
     width: 80px;
-    padding-top: 1rem;
   }
 
   .flex {
@@ -86,7 +76,6 @@
 
   .col-head,
   .condition {
-    padding: 1rem 0;
     font-size: 1.25rem;
   }
 
@@ -133,7 +122,7 @@
   }
 
   .container img:hover {
-    box-shadow: 0 0 0.5rem 0.75rem rgb(64, 64, 64);
+    box-shadow: 0 0 0.5rem 0.5rem rgb(64, 64, 64);
   }
 
   .visit {
@@ -213,6 +202,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+    border: 1px solid rgb(64, 64, 64);
   }
 
   div.sections section div {
@@ -227,9 +217,7 @@
   }
 
   article {
-    background-color: rgb(232, 213, 195);
-    grid-column: 1 / 4;
-    padding: 1.5rem;
+    padding: 0 1rem 1rem 1rem;
   }
 
   article h2 {
@@ -245,6 +233,10 @@
 
   div.sections section:nth-child(even) {
     flex-direction: column;
+  }
+
+  .heavysnowfall {
+    border-radius: 0.25rem;
   }
 
 }

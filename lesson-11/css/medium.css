@@ -12,7 +12,11 @@
   }
 
   main {
-    padding: 0.25rem 2rem;
+    padding: 0.25rem 2rem 1rem 2rem;
+  }
+
+  main.gallery {
+    padding: 1rem;
   }
 
   .pancakes p {
@@ -38,6 +42,10 @@
     display: none;
   }
 
+  nav a:hover {
+    border: none;
+  }
+
   h1 {
     font-size: 2.5rem;
   }
@@ -58,7 +66,7 @@
 
   .herocontainer {
     position: relative;
-    padding-bottom: 0.25rem;
+    padding: 0;
   }
 
   .weather {
@@ -90,7 +98,7 @@
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.4fr;
+    clear: left;
   }
 
   .attribution {
@@ -182,7 +190,6 @@
 
   div.sections section img, .heavysnowfall {
     width: 50%;
-    padding: 0.1rem;
     border-radius: 3rem 1rem;
     box-shadow: 0 0 0.5rem 0.25rem rgb(64, 64, 64);
     background-color: rgb(64, 64, 64);
@@ -190,6 +197,10 @@
 
   .articlepara {
     line-height: 1.5;
+  }
+
+  article {
+    padding: 0 0.75rem 2rem 0.75rem;
   }
 
   form div.danger label.sbs {

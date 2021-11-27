@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Virgil Cane">
   <meta name="description"
-    content="Tri-County News provides reliable coverage of the Preston, Soda Springs, and Fish Haven region. The Preston page provides community event information, current and forecasted weather, and articles regarding community events.">
+    content="The page provides news and weather specifically for Preston. The page includes community event information, current and forecasted weather, summary of upcoming events, and articles regarding community events.">
   <title>Tri-County News | Preston</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
     rel="stylesheet" media="all">
-  <link rel="stylesheet" href="../css/normalize.css" media="all">
+  <link rel="stylesheet" href="css/normalize.css" media="all">
   <link rel="shortcut icon" href="red-favicon.ico">
   <link href="css/small.css" rel="stylesheet" media="all">
   <link href="css/medium.css" rel="stylesheet" media="all">
@@ -22,8 +22,6 @@
   <script defer src="js/date.js"></script>
   <script defer src="js/pancakes.js"></script>
   <script defer src="js/weather.js"></script>
-  <script defer src="js/events.js"></script>
-  <!-- <script src="js/test.js"></script> -->
 </head>
 
 <body>
@@ -33,35 +31,24 @@
   </div>
   <header>
     <picture>
-      <img src="../lesson3/images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
+      <img src="images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
     </picture>
     <section class="headings">
       <h1>Tri-County News</h1>
       <div class="motto">Reliable News for the Region</div>
     </section>
   </header>
-  <nav>
-    <ul class="nav-list">
-      <li><a class="menu" href="#">Menu</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="preston.html" class="active">Preston</a></li>
-      <li><a href="sodasprings.html">Soda Springs</a></li>
-      <li><a href="fishhaven.html">Fish Haven</a></li>
-      <li><a href="stormcenter.html">Storm Center</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-    </ul>
-  </nav>
   <div class="herocontainer">
     <picture class="heroimg">
       <source media="(max-width: 510px)" srcset="images/mountaintown734x350.webp">
       <source media="(max-width: 939px)" srcset="images/mountaintown845x417.webp">
       <source media="(min-width: 940px)" srcset="images/mountaintown960x425.webp">
       <img src="images/mountaintownorg1024x488.webp"
-        alt="A green, grassy field with trees and mountains in the background on a sunny day.">
+        alt="A town in a valley with tall, snow-capped mountains surrounding the valley.">
     </picture>
-    <h2>Preston, Idaho</h2>
+
     <section class="weather">
-      <h3>Weather Summary</h3>
+      <h2>Weather Summary</h2>
       <p class="left">Currently:</p>
       <p class="right"><span class="cloudiness"></span></p>
       <p class="left">Current temp:</p>
@@ -74,7 +61,25 @@
       <p class="right"><span class="s"></span> MPH</p>
     </section>
   </div>
+  <nav>
+    <ul class="nav-list">
+      <li><a class="menu" href="#">Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html" class="active">Preston</a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li><a href="fishhaven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
   <main>
+    <h2>Preston, Idaho</h2>
+    <section class="events">
+      <h3>
+        Upcoming Events
+      </h3>
+      <div id="events"></div>
+    </section>
     <h3 class="forecast">Five Day Forecast</h3>
     <div class="flex">
       <div class="flex-col">
@@ -103,14 +108,7 @@
         <span class="condition" id="temp5"></span>
       </div>
     </div>
-    <section class="events">
-      <h3>
-        Upcoming Events
-      </h3>
-      <div id="events"></div>
 
-
-    </section>
     <article>
       <h3 class="park">Annual Preston Community Park</h3>
       <h3 class="tot">Trunk or Treat</h3>
@@ -120,7 +118,8 @@
         <source media="(min-width: 940px)" srcset="images/kidsincostumeslarge.webp">
         <img src="images/kidsincostumes-org.webp" alt="Photo of several kids in different Halloween costumes.">
       </picture>
-      <p class="articlepara">The Annual Preston Community Park Trunk or Treat will be held on Saturday, October 30<sup>th</sup> starting at
+      <p class="articlepara">The Annual Preston Community Park Trunk or Treat will be held on Saturday, October
+        30<sup>th</sup> starting at
         6:30 P.M.
         Prepare your little pirates, superheroes, princesses, and unicorns to collect their year's worth of candy. Come
         and decorate
@@ -130,13 +129,7 @@
         games for the kids.
         A haunted maze will lead unsuspecting victims through the spooky haunted forest.
       </p>
-      <p class="articlepara">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </p>
+
     </article>
   </main>
   <footer>
@@ -156,7 +149,6 @@
         <img src="images/instagramicon.png" alt="instgram logo" />
         <img src="images/facebookicon.png" alt="facebook logo" />
       </div>
-
     </section>
     <picture class="map">
       <source media="(max-width: 510px)" srcset="images/map520-70.webp">

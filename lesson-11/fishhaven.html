@@ -7,61 +7,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Virgil Cane">
   <meta name="description"
-    content="Tri-County News provides reliable coverage of the Preston, Soda Springs, and Fish Haven region. The Preston page provides community event information, current and forecasted weather, and articles regarding community events.">
-  <title>Tri-County News | Preston</title>
+    content="The Fish Haven page displays news articles written by volunteers who cover the local news in the small town. The weather is compiled and presented by the meteorologist in Preston.">
+  <title>Tri-County News | Fish Haven</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
     rel="stylesheet" media="all">
-  <link rel="stylesheet" href="../css/normalize.css" media="all">
+  <link rel="stylesheet" href="css/normalize.css" media="all">
   <link rel="shortcut icon" href="red-favicon.ico">
   <link href="css/small.css" rel="stylesheet" media="all">
   <link href="css/medium.css" rel="stylesheet" media="all">
   <link href="css/large.css" rel="stylesheet" media="all">
   <script defer src="js/button.js"></script>
   <script defer src="js/date.js"></script>
-  <script defer src="js/pancakes.js"></script>
   <script defer src="js/weather.js"></script>
-  <!-- <script src="js/test.js"></script> -->
-  <script src="js/events.js"></script>
 </head>
 
 <body>
-  <div class="pancakes">
-    <p>🥞 Preston Pancakes in the Park! 🥞</p>
-    <p>9 a.m. Saturday at the city park.</p>
-  </div>
   <header>
     <picture>
-      <img src="../lesson3/images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
+      <img src="images/tricountynewsicon.png" class="icon" alt="An image of the Tri-County News Icon.">
     </picture>
     <section class="headings">
       <h1>Tri-County News</h1>
       <div class="motto">Reliable News for the Region</div>
     </section>
   </header>
-  <nav>
-    <ul class="nav-list">
-      <li><a class="menu" href="#">Menu</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="preston.html">Preston</a></li>
-      <li><a href="sodasprings.html">Soda Springs</a></li>
-      <li><a href="fishhaven.html" class="active">Fish Haven</a></li>
-      <li><a href="stormcenter.html">Storm Center</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-    </ul>
-  </nav>
+
   <div class="herocontainer">
     <picture class="heroimg">
-      <source media="(max-width: 510px)" srcset="images/mountaintown734x350.webp">
-      <source media="(max-width: 939px)" srcset="images/mountaintown845x417.webp">
-      <source media="(min-width: 940px)" srcset="images/mountaintown960x425.webp">
-      <img src="images/mountaintownorg1024x488.webp"
-        alt="A green, grassy field with trees and mountains in the background on a sunny day.">
+      <source media="(max-width: 510px)" srcset="images/fhhero750x398.webp">
+      <source media="(max-width: 939px)" srcset="images/fhhero850x451.webp">
+      <source media="(min-width: 940px)" srcset="images/fishhaven960x509.webp">
+      <img src="images/fishhaven960x509.webp"
+        alt="A silhouette of a man and his sons fishing in a boat on the lake at sunset.">
     </picture>
-    <h2>Preston, Idaho</h2>
+
     <section class="weather">
-      <h3>Weather Summary</h3>
+      <h2>Weather Summary</h2>
       <p class="left">Currently:</p>
       <p class="right"><span class="cloudiness"></span></p>
       <p class="left">Current temp:</p>
@@ -74,7 +57,25 @@
       <p class="right"><span class="s"></span> MPH</p>
     </section>
   </div>
+  <nav>
+    <ul class="nav-list">
+      <li><a class="menu" href="#">Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li><a href="fishhaven.html" class="active">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
   <main>
+    <h2>Fish Haven, Idaho</h2>
+    <section class="events">
+      <h3>
+        Upcoming Events
+      </h3>
+      <div id="events"></div>
+    </section>
     <h3 class="forecast">Five Day Forecast</h3>
     <div class="flex">
       <div class="flex-col">
@@ -103,39 +104,28 @@
         <span class="condition" id="temp5"></span>
       </div>
     </div>
-    <section class="events">
-      <h3>
-        Upcoming Events
-      </h3>
-      <div id="events"></div>
-
-
-    </section>
+    
     <article>
-      <h3 class="park">Annual Preston Community Park</h3>
-      <h3 class="tot">Trunk or Treat</h3>
+      <h3 class="tot">Light The Tree Festival</h3>
       <picture class="kids">
-        <source media="(max-width: 510px)" srcset="images/kidsincostumes70small.webp">
-        <source media="(max-width: 939px)" srcset="images/kidsincostumesmed70.webp">
-        <source media="(min-width: 940px)" srcset="images/kidsincostumeslarge.webp">
-        <img src="images/kidsincostumes-org.webp" alt="Photo of several kids in different Halloween costumes.">
+        <source media="(max-width: 510px)" srcset="images/santawithkids380x304.webp">
+        <source media="(max-width: 939px)" srcset="images/santawithkids400x320.webp">
+        <source media="(min-width: 940px)" srcset="images/santawithkids450x360.webp">
+        <img src="images/santawithkids450x360.webp"
+          alt="Santa Claus sitting in a red chair with small boy and his baby brother.">
       </picture>
-      <p>The Annual Preston Community Park Trunk or Treat will be held on Saturday, October 30<sup>th</sup> starting at
-        6:30 P.M.
-        Prepare your little pirates, superheroes, princesses, and unicorns to collect their year's worth of candy. Come
-        and decorate
-        your trunk with tricks and don't forget the treats! The annual event draws crowds from the surrounding area.
-        Vendors will be
-        be available if you decide you need a warm drink or some other treat. Community sponsors are also preparing
-        games for the kids.
-        A haunted maze will lead unsuspecting victims through the spooky haunted forest.
+      <p class="articlepara">On December 12<sup>th</sup>, the Fish Haven Activities Committee will hold its annual Light
+        The Tree Festival.
+        The local community center will be decorated with Christmas decorations. The community potluck dinner will begin
+        at 5:30 pm. Please bring the side dish or dessert that you signed up for. The local Pit Masters Club will be
+        providing the smoked ham. Please bring your own drink. The dinner portion of the activity will begin to close
+        down at 7:30 pm.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
+      <p class="articlepara">
+        At precisely 6 pm, a very special guest will show up to hear the Christmas wishes that anyone may have. He will
+        be available from 6 pm - 8 pm. He will have small gifts for all the children age 8 and younger. At 8 pm, he will
+        lead everyone out to the tree for the lighting ceremony. After everyone is gathered, Santa will press the button
+        to light the tree.
       </p>
     </article>
   </main>

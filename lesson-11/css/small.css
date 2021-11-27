@@ -1,10 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
-  max-width: 960px;
+  max-width: 1000px;
   font-size: 16px;
   color: rgb(64, 64, 64);
   margin: 0 auto;
-  line-height: 1.15;
+  line-height: 1.25;
   background-color: rgb(84, 45, 9);
 }
 
@@ -81,6 +81,7 @@ nav a:hover {
   background-color: rgb(232, 213, 195);
   color: rgb(64, 64, 64);
   border-top: 1px solid rgb(64, 64, 64);
+  border-bottom: 1px solid rgb(64, 64, 64);
 }
 
 .active {
@@ -130,6 +131,21 @@ h4 {
 
 .herocontainer {
   background-color: rgb(237, 178, 123);
+  padding-bottom: 0.5rem;
+}
+
+section.events {
+  background-color: rgb(232, 213, 195);
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid rgb(64, 64, 64);
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+section.events p, section.events h3 {
+  margin: 0;
+  padding: 0.25rem;
 }
 
 .heroimg img,
@@ -137,8 +153,8 @@ h4 {
 figure img,
 .heavysnowfall {
   width: 100%;
-  height: auto;
   margin: 0;
+  display: block;
 }
 
 .kids img,
@@ -161,13 +177,13 @@ figure img {
 }
 
 .weather {
-  margin: 0 auto;
+  margin: 0.5rem auto 0 auto;
   padding: 0.5rem;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 0.25rem;
-  width: 75%;
+  width: 80%;
   background-color: rgb(232, 213, 195);
   border: 1px solid rgb(64, 64, 64);
 }
@@ -182,11 +198,6 @@ span.cloudiness {
 
 .right {
   justify-self: left;
-}
-
-.weather h3 {
-  grid-column: 1 / span 2;
-  margin: 0;
 }
 
 .weather p {
@@ -227,7 +238,7 @@ span.cloudiness {
 
 .articlepara {
   margin: 0;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0;
 }
 
 footer h4 {
@@ -235,16 +246,16 @@ footer h4 {
   margin: 0;
 }
 
-footer, footer p {
-  text-align: center;
+footer p {  
   padding: 0.5rem 0;
   margin: 0;
   line-height: 1.5;
 }
 
 footer {
-  padding: 0.5rem;
+  padding: 1rem;
   border-top: 1px rgb(64, 64, 64) solid;
+  text-align: center;
 }
 
 .map,
@@ -414,11 +425,7 @@ a.button:hover {
 
 .homeheroimg img {
   width: 100%;
-  margin-bottom: -0.25rem;
-}
-
-.homeherocontainer {
-  background-color: rgb(232, 213, 195);
+  margin-bottom: -0.3rem;
 }
 
 div.sections section p,
@@ -435,13 +442,7 @@ div.sections section div {
 
 article {
   background-color: rgb(232, 213, 195);
-  /*padding: 0 1rem;*/
-  margin: 1.5rem 0;
-  /*border: 1px solid rgb(64, 64, 64);*/
+  margin: 1rem 0;
+  padding: 0 0.75rem;
+  border: 1px solid rgb(64, 64, 64);
 }
-
-/*article p,
-article h2 {
-  padding-bottom: 1rem;
-  margin: 0;
-}*/
