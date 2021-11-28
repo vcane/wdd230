@@ -195,12 +195,12 @@
     background-color: rgb(64, 64, 64);
   }
 
-  .articlepara {
-    line-height: 1.5;
-  }
-
   article {
     padding: 0 0.75rem 2rem 0.75rem;
+  }
+
+  .articlepara {
+    line-height: 1.5;
   }
 
   form div.danger label.sbs {
