@@ -1,3 +1,71 @@
+html {
+  background-color: rgb(158, 149, 82);
+}
+
+body {
+  margin: 0 auto;
+  background-color: rgb(210, 221, 232);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  max-width: 960px;
+  color: rgb(33, 41, 153);
+  line-height: 1.25;
+}
+
+.alert {
+  display: none;
+}
+
+header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  background-color: rgb(230, 213, 20);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-list li:first-child {
+  display: block;
+}
+
+.nav-list li {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(33, 41, 153);
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(230, 41, 34);
+  color: rgb(33, 41, 153);
+}
+
+.active {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  color: rgb(33, 41, 153);
+  padding: 0.9rem;
+}
+
 /*---------fonts------------*/
 /*font-family: 'Nanum Myeongjo', serif;
   font-family: 'Poppins', sans-serif;*/
@@ -8,7 +76,7 @@
 .Chamber1-2-hex { color: #E62922; }
 .Chamber1-3-hex { color: #D2DDE8; }
 .Chamber1-4-hex { color: #E6D514; }
-.Chamber1-5-hex { color: #9E9552; }
+.Chamber1-5-hex { color: #9E9552; }*/
 
  Color Theme Swatches in RGBA 
 .Chamber1-1-rgba { color: rgba(33, 41, 153, 1); }
@@ -17,7 +85,7 @@
 .Chamber1-4-rgba { color: rgba(230, 213, 20, 1); }
 .Chamber1-5-rgba { color: rgba(158, 149, 82, 1); }
 
- Color Theme Swatches in HSLA 
+ /*Color Theme Swatches in HSLA 
 .Chamber1-1-hsla { color: hsla(236, 64, 36, 1); }
 .Chamber1-2-hsla { color: hsla(2, 79, 51, 1); }
 .Chamber1-3-hsla { color: hsla(209, 32, 86, 1); }

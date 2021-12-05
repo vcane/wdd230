@@ -1,0 +1,1 @@
+window.onload = setInterval(() => { alert("Hello"); }, 3000);

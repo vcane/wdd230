@@ -1,0 +1,84 @@
+@media only screen and (min-width: 32.5em) {
+  header {
+    justify-content: space-around;
+  }
+
+  header,
+  footer,
+  main,
+  nav {
+    font-size: 1rem;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list li {
+    flex: 1 1 auto;
+    display: block;
+  }
+
+  .nav-list li:first-child {
+    display: none;
+  }
+
+  nav a:hover {
+    border: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .motto {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.25rem 0;
+  }
+
+  .flex img {
+    width: 70px;
+  }
+
+  .col-head,
+  .condition {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    clear: left;
+  }
+
+  .attribution {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  footer section {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+  }
+
+  #copyright {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+  }
+
+  
+
+}
