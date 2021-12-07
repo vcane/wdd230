@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="css/medium.css" media="all">
   <link rel="stylesheet" href="css/large.css" media="all">
   <link rel="shortcut icon" href="topcity.ico">
+  <script defer src="js/button.js"></script>
+  <script defer src="js/date.js"></script>
 
 </head>
 
@@ -25,10 +27,10 @@
   <aside class="alert"><span id="weatheralert"></span> Weather alert placeholder</aside>
   <header>
     <img src="images/topcoc-ltbluebg-opt-256x256.webp" alt="Topeka Chamber of Commerce logo">
-    <h1>Topeka Chamber of Commerce</h1>
-    <p class="motto">Building a meaningful business network in Top City!”</p>
-    <div class="joinusbtn">Join Us</div>
-    <div class="contactusbtn">Contact Us</div>
+    <div class="title">
+      <h1>Topeka Chamber of Commerce</h1>
+      <span class="motto">"Building an excellent business network!"</span>
+    </div>
   </header>
   <nav>
     <ul class="nav-list">
@@ -40,14 +42,84 @@
       <li><a href="contactus.html" class="active">Contact Us</a></li>
     </ul>
   </nav>
-  <div class="herocontainer">
-    <picture>
-      <img src="images/capitalcity.webp" alt="Capital City of Kansas sign on Topeka Blvd. and SW 12th Street">
-    </picture>
-  </div>
+  <picture class="herocontainer">
+    <img src="images/capitalcity.webp" alt="Capital City of Kansas sign on Topeka Blvd. and SW 12th Street">
+  </picture>
   <main>
     <h2>Contact Us</h2>
-    
+    <p>We look forward to speaking with you to answer your questions or assist in any way we can. Please feel free to
+      contact us by any method that is most comfortable to you. Our contact information can be found on this page along
+      with a list of the board of directors for the chamber of commerce. However, if you wish for us to contact you,
+      please complete the form below. Please leave us your name, phone number, email address, and your questions or
+      comments. A staff member will contact you within two (2) business days.
+    </p>
+    <section class="contactinfo">
+      <h3>Our Contact Information</h3>
+      <span>Phone Number : </span>785-234-2644<br>
+      <span>Address: </span>719 S Kansas Ave., STE 100<br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;Topeka, Kansas 66603<br>
+      <span>Email: </span><a href="mailto:chamber@topekachamber.com">contact-us@topekachamber.com</a><br>
+      <span>Fax Number: </span>785-234-8656<br>
+    </section>
+    <form method="get" action="thanks-contact.html" id="form">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label class="top">First Name: <input type="text" name="fname" title="Please enter your first name."></label>
+        <label class="top">Last Name: <input type="text" name="lname" title="Please enter your last name."></label>
+        <label class="top">Email: <input type="email" name="email" placeholder="name@gmail.com"></label>
+        <label class="top">Cell Phone Number: <input type="tel" name="phone"
+            title="Please enter your cell phone number with area code."></label>
+        <label class="top">Additional Information or Comments? <textarea name="addinfo" id="addinfo" cols="30"
+            rows="10"></textarea></label>
+      </fieldset>
+      <button type="submit" class="submit" form="form" formaction="thanks-contact.html" name="reportbutton">Contact
+        Us</button>
+    </form>
+    <div class="iframecontainer">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.4982879094523!2d-95.67470489047271!3d39.049557223350426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bf030e96514fb5%3A0x559c77fe29bee1bb!2sGreater%20Topeka%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1638834590565!5m2!1sen!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+    <section class="directors">
+      <h3>Executive Committee</h3>
+      <p>JuliAnn Mazachek<br>
+        Washburn University Foundations<br>
+        <strong>Chair</strong>
+      </p>
+      <p>Matt All<br>
+        Blue Cross & Blue Shield of Kansas<br>
+        <strong>Chair-Elect</strong>
+      </p>
+      <p>Chris McGee<br>
+        Krumins McGee Financial Group, Wells Fargo Advisors, LLC<br>
+        <strong>Treasurer</strong>
+      </p>
+      <p>Mark Rezac<br>
+        Kansas Commercial<br>
+        <strong>Immediate Past Chair</strong>
+      </p>
+      <p>Curtis Sneden<br>
+        Greater Topeka Partnership<br>
+        <strong>President</strong>
+      </p>
+      <p>Billie Hall<br>
+        Suflower Foundation<br>
+        <strong>Vice Chair of Government Affairs</strong>
+      </p>
+      <p>Amber Beckley<br>
+        Beckley Chiropractic<br>
+        <strong>Vice Chair of Small Business</strong>
+      </p>
+      <p>Jolene Piper<br>
+        Laird Noller Ford<br>
+        <strong>Non-Member Officer</strong>
+      </p>
+      <p>David Sandir<br>
+        Commercial Group, Inc.<br>
+        <strong>Non-Member Officer</strong>
+      </p>
+    </section>
   </main>
   <footer>
     <section>
@@ -72,8 +144,9 @@
       <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
       <p>Weather data obtained from <a href="https://openweathermap.org/">openweather.org.</a></p>
     </div>
-    <p class="last-update">Last updated: <span id="lastupdate"></span></p>
+    <p id="lastupdate">Last updated: <span id="lastupdate"></span></p>
     <a href="#top">Go to top</a>
   </footer>
 </body>
+
 </html>

@@ -18,31 +18,31 @@
   <link rel="stylesheet" href="css/medium.css" media="all">
   <link rel="stylesheet" href="css/large.css" media="all">
   <link rel="shortcut icon" href="topcity.ico">
+  <script defer src="js/button.js"></script>
+  <script defer src="js/date.js"></script>
 </head>
 
 <body>
   <header>
     <img src="images/topcoc-ltbluebg-opt-256x256.webp" alt="Topeka Chamber of Commerce logo">
-    <h1>Topeka Chamber of Commerce</h1>
-    <p class="motto">Building a meaningful business network in Top City!”</p>
-    <div class="joinusbtn">Join Us</div>
-    <div class="contactusbtn">Contact Us</div>
+    <div class="title">
+      <h1>Topeka Chamber of Commerce</h1>
+      <span class="motto">"Building an excellent business network!"</span>
+    </div>
   </header>
   <nav>
     <ul class="nav-list">
       <li><a class="menu" href="#">Menu</a></li>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="topeka.html">Topeka, Kansas</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topeka.html" class="active">Topeka, Kansas</a></li>
       <li><a href="join.html">Join Us</a></li>
       <li><a href="directory.html">Member Directory</a></li>
       <li><a href="contactus.html">Contact Us</a></li>
     </ul>
   </nav>
-  <div class="herocontainer">
-    <picture>
-      <img src="images/kscapitol-unsplash.webp" alt="Kansas State Capitol Building in Topeka, Kansas.">
-    </picture>
-  </div>
+  <picture class="herocontainer">
+    <img src="images/kscapitol-unsplash.webp" alt="Kansas State Capitol Building in Topeka, Kansas.">
+  </picture>
   <main>
     <h2>Welcome To Topeka, Kansas!</h2>
     <p>Topeka is the capitol city of Kansas and located within Shawnee County in northeast Kansas. It has a population
@@ -73,16 +73,28 @@
     <section>
       <h3>Modern Topeka</h3>
       <p>
-        Topeka is a diverse city which supports many cultures and religions. We believe this diversity provides excellent opportunity for families to grow and experience many cultural and artistic activities in a safe environment. The city population is comprised of approximately 78% Caucasian, 12% African-American, and 10% of people in other races. The average household size is 2.94 people with approximately 25% of the city's population being under 18 years old. The median age is 37 years old. As of the year 2000, the median household income was $35,000 and the median family income was $45,000. The area provides a multitude of excellent public and private schools for all grades. Higher education institutions are also located in the area including Washburn University. The area supports many different mueseums such as the Mulvane Art Museum, Kansas Historical Museum, and many others.
+        Topeka is a diverse city which supports many cultures and religions. We believe this diversity provides
+        excellent opportunity for families to grow and experience many cultural and artistic activities in a safe
+        environment. The city population is comprised of approximately 78% Caucasian, 12% African-American, and 10% of
+        people in other races. The average household size is 2.94 people with approximately 25% of the city's population
+        being under 18 years old. The median age is 37 years old. As of the year 2000, the median household income was
+        $35,000 and the median family income was $45,000. The area provides a multitude of excellent public and private
+        schools for all grades. Higher education institutions are also located in the area including Washburn
+        University. The area supports many different mueseums such as the Mulvane Art Museum, Kansas Historical Museum,
+        and many others.
       </p>
       <p>
-        The area 
+        The area
       </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/2VIZ1apWpbs" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+      <div class="iframecontainer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2VIZ1apWpbs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
-    
+
   </main>
   <footer>
     <section>
@@ -106,7 +118,9 @@
     <div class="attribution">
       <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
     </div>
-    <p class="last-update">Last updated: <span id="lastupdate"></span></p>
+    <p class="lastupdate">Last updated: <span id="lastupdate"></span></p>
+    <a href="#top">Go to top</a>
   </footer>
 </body>
+
 </html>

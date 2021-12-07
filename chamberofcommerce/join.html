@@ -18,53 +18,133 @@
   <link rel="stylesheet" href="css/medium.css" media="all">
   <link rel="stylesheet" href="css/large.css" media="all">
   <link rel="shortcut icon" href="topcity.ico">
+  <script defer src="js/button.js"></script>
+  <script defer src="js/date.js"></script>
 </head>
 
 <body>
   <header>
     <img src="images/topcoc-ltbluebg-opt-256x256.webp" alt="Topeka Chamber of Commerce logo">
-    <h1>Topeka Chamber of Commerce</h1>
-    <p class="motto">Building a meaningful business network in Top City!”</p>
-    <div class="joinusbtn">Join Us</div>
-    <div class="contactusbtn">Contact Us</div>
+    <div class="title">
+      <h1>Topeka Chamber of Commerce</h1>
+      <span class="motto">"Building an excellent business network!"</span>
+    </div>
   </header>
   <nav>
     <ul class="nav-list">
       <li><a class="menu" href="#">Menu</a></li>
-      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html" >Home</a></li>
       <li><a href="topeka.html">Topeka, Kansas</a></li>
-      <li><a href="join.html">Join Us</a></li>
+      <li><a href="join.html" class="active">Join Us</a></li>
       <li><a href="directory.html">Member Directory</a></li>
       <li><a href="contactus.html">Contact Us</a></li>
     </ul>
   </nav>
-  <div class="herocontainer">
-    <picture>
-      <img src="images/businesswoman-hanshake.webp" alt="Business woman extending hand to shake and welcoming to the group behind her. ">
-    </picture>
-  </div>
+  <picture class="herocontainer">
+    <img src="images/businesswoman-hanshake.webp"
+        alt="Business woman extending hand to shake and welcoming to the group behind her. ">
+  </picture>
   <main>
     <h2>Join Us</h2>
     <h3>Instructions</h3>
-    <p>Please complete the form below to request a membership in the Topeka Chamber of Commerce. Every label marked with a red asterick (<span class="required">*</span>) is required to be completed. The required information is your first name, last name, email, business name, and membership level. </p>
+    <p>Please complete the form below to request a membership in the Topeka Chamber of Commerce. Every label marked with
+      a red asterick (<span class="required">*</span>) is required to be completed. The required information is your
+      first name, last name, email, business name, and membership level.
+    </p>
+    <p>
+      All businesses and individuals that members of the chamber receive the Member-To-Member benefits regardless of
+      membership level. The Member-To-Member benefits provide discounts to members of the chamber. The discounts are set
+      by the business providing the discount. A member must request the discount and present employee identification to
+      prove they are employed by a member of the chamber. Each membership level has besides the Member-To-Member
+      Benefits. The following list provides a description of the benefits of each membership level. Please contact staff
+      at the Chamber of Commerce for more details on the benefits.
+    </p>
+    <ul>
+      <li>Gold membership benefits ($1000/year):
+        <ul>
+          <li>
+            5 business days of training for employees per year.
+          </li>
+          <li>
+            75% discount on tickets to the annual conference.
+          </li>
+          <li>
+            Sponsorships for advertisements.
+          </li>
+          <li>
+            Plus all benefits that the lower membership levels receive.
+          </li>
+        </ul>
+      </li>
+      <li>Silver membership benefits ($400/year):
+        <ul>
+          <li>
+            3 business days of training for employees per year.
+          </li>
+          <li>
+            50% discount on tickets to the annual conference.
+          </li>
+          <li>
+            Plus all benefits that the lower membership levels receive.
+          </li>
+        </ul>
+      </li>
+      <li>Bronze membership benefits ($200/year):
+        <ul>
+          <li>
+            Free social media advertisements.
+          </li>
+          <li>
+            25% discount on tickets to the annual conference.
+          </li>
+          <li>
+            Plus all benefits that the lower membership levels receive.
+          </li>
+        </ul>
+      </li>
+      <li>Non-profit membership benefits ($100/year):
+        <ul>
+          <li>
+            Free social media advertisements.
+          </li>
+          <li>
+            50% discount on tickets to the annual conference.
+          </li>
+          <li>
+            Free social media advertisements.
+          </li>
+        </ul>
+      </li>
+    </ul>
     <form method="get" action="thanks.html" id="form">
       <fieldset>
         <legend>Contact Information</legend>
-        <label class="top">First Name<span class="required">*</span>: <input type="text" name="fname" required pattern="[A-Za-z]+" minlength="2"
+        <label class="top">First Name<span class="required">*</span>: <input type="text" name="fname" required
+            pattern="[A-Za-z]+" minlength="2"
             title="Please enter your first name using capital or lowercase letters with a minimum of two letters."></label>
-        <label class="top">Last Name<span class="required">*</span>: <input type="text" name="lname" required pattern="[A-Za-z]+" minlength="2"
+        <label class="top">Last Name<span class="required">*</span>: <input type="text" name="lname" required
+            pattern="[A-Za-z]+" minlength="2"
             title="Please enter your last name using capital or lowercase letters with a minimum of two letters."></label>
-        <label class="top">Title: <input type="text" name="title" title="Please enter your position title at work."></label>
-        <label class="top">Email<span class="required">*</span>: <input type="email" name="email" placeholder="name@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label>
-        <label class="top">Cell Phone Number: <input type="tel" name="phone" title="Please enter your cell phone number with area code."></label>
-        <label class="top">Business Name<span class="required">*</span>: <input type="text" name="businessname" title="Please enter the name of your business." required pattern="[A-Za-z]+" minlength="2"></label>
-        <label class="top">Business Street Address: <input type="text" name="streetaddress" title="Please enter the street address of your business."></label>
-        <label class="top">City: <input type="text" name="cityname" title="Please enter the name of the city your business headquarters are located in."></label>
-        <label class="top">State: <input type="text" name="state" title="Please enter the name of the state your business headquarters are located in."></label>
+        <label class="top">Title: <input type="text" name="title"
+            title="Please enter your position title at work."></label>
+        <label class="top">Email<span class="required">*</span>: <input type="email" name="email"
+            placeholder="name@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label>
+        <label class="top">Cell Phone Number: <input type="tel" name="phone"
+            title="Please enter your cell phone number with area code."></label>
+        <label class="top">Business Name<span class="required">*</span>: <input type="text" name="businessname"
+            title="Please enter the name of your business." required pattern="[A-Za-z]+" minlength="2"></label>
+        <label class="top">Business Street Address: <input type="text" name="streetaddress"
+            title="Please enter the street address of your business."></label>
+        <label class="top">City: <input type="text" name="cityname"
+            title="Please enter the name of the city your business headquarters are located in."></label>
+        <label class="top">State: <input type="text" name="state"
+            title="Please enter the name of the state your business headquarters are located in."></label>
         <label class="top">Zip Code: <input type="number" name="zipcode" title="Please enter your zip code."></label>
-        <label class="top">Business Website: <input type="text" name="website" title="Please enter the website for your business."></label>
-        <label class="top">Business Description: <input type="text" name="businessdescription" title="Please enter a description of your business."></label>
-        <div class="danger">Please choose your membership level<span class="required">*</span>:
+        <label class="top">Business Website: <input type="text" name="website"
+            title="Please enter the website for your business."></label>
+        <label class="top">Business Description: <input type="text" name="businessdescription"
+            title="Please enter a description of your business."></label>
+        <div class="radio">Please choose your membership level<span class="required">*</span>:
           <label class="sbs"><input type="radio" name="membership" value="gold" required> Gold</label>
           <label class="sbs"><input type="radio" name="membership" value="silver" required> Silver</label>
           <label class="sbs"><input type="radio" name="membership" value="bronze" required> Bronze</label>
@@ -77,26 +157,28 @@
   <footer>
     <section>
       <h3>Contact Information</h3>
-      
+
       <div class="address">
-        <span>☎ : </span>785-234-2644<br>  
+        <span>☎ : </span>785-234-2644<br>
         <span>📫: </span>719 S Kansas Ave., STE 100<br>
         &emsp;&emsp;Topeka, Kansas 66603<br>
         <span>📧: </span><a href="mailto:chamber@topekachamber.com">contact-us@topekachamber.com</a><br>
         <span>📠: </span>785-234-8656<br>
       </div>
-      
+
       <div class="social">
         <img src="images/twittericon.png" alt="twitter logo" />
         <img src="images/instagramicon.png" alt="instgram logo" />
         <img src="images/facebookicon.png" alt="facebook logo" />
       </div>
     </section>
-    
+
     <div class="attribution">
       <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
     </div>
-    <p class="last-update">Last updated: <span id="lastupdate"></span></p>
+    <p id="lastupdate">Last updated: <span id="lastupdate"></span></p>
+    <a href="#top">Go to top</a>
   </footer>
 </body>
+
 </html>

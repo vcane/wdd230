@@ -18,15 +18,17 @@
   <link rel="stylesheet" href="css/medium.css" media="all">
   <link rel="stylesheet" href="css/large.css" media="all">
   <link rel="shortcut icon" href="topcity.ico">
+  <script defer src="js/button.js"></script>
+  <script defer src="js/date.js"></script>
 </head>
 
 <body>
   <header>
     <img src="images/topcoc-ltbluebg-opt-256x256.webp" alt="Topeka Chamber of Commerce logo">
-    <h1>Topeka Chamber of Commerce</h1>
-    <p class="motto">Building a meaningful business network in Top City!”</p>
-    <div class="joinusbtn">Join Us</div>
-    <div class="contactusbtn">Contact Us</div>
+    <div class="title">
+      <h1>Topeka Chamber of Commerce</h1>
+      <span class="motto">"Building an excellent business network!"</span>
+    </div>
   </header>
   <nav>
     <ul class="nav-list">
@@ -38,11 +40,10 @@
       <li><a href="contactus.html">Contact Us</a></li>
     </ul>
   </nav>
-  <div class="herocontainer">
-    <picture>
-      <img src="images/businesswoman-hanshake.webp" alt="Business woman extending hand to shake and welcoming to the group behind her. ">
-    </picture>
-  </div>
+  <picture class="herocontainer">
+    <img src="images/businesswoman-hanshake.webp"
+        alt="Business woman extending hand to shake and welcoming to the group behind her. ">
+  </picture>
   <main>
     <h2>Thank You!</h2>
     
@@ -69,7 +70,8 @@
     <div class="attribution">
       <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
     </div>
-    <p class="last-update">Last updated: <span id="lastupdate"></span></p>
+    <p id="lastupdate">Last updated: <span id="lastupdate"></span></p>
+    <a href="#top">Go to top</a>
   </footer>
 </body>
 </html>
