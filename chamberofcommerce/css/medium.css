@@ -17,21 +17,70 @@
     grid-column: 1 / 3;
   }
 
+  section.sally {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  section.emily {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+  }
+
+  section.sally,
+  section.emily {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  section.weather {
+    margin: 0 auto 1rem;
+  }
+
+  section.sally div,
+  section.sally ul {
+    margin: 0;
+    
+  }
+
   section.weather p.temp {
     font-size: 2rem;
   }
 
-  article img {
+  article img, section.history picture img {
     float: right;
     width: 50%;
-    margin: 1rem;
+    margin: 1.5rem;
+    box-shadow: 0 0 0.5rem 0.5rem rgb(33, 41, 153);
+    border-radius: 0.25rem;
+  }
+
+  section.history picture img {
+    float: left;
+  }
+
+  article img {
+    float: right;
+  }
+
+  section.modern {
+    clear: left;
   }
 
   header,
   footer,
   main,
-  nav {
+  nav ul li a {
     font-size: 1rem;
+  }
+
+  section.benefits,
+  section.upcomingevents,
+  section.ad,
+  article,
+  .flex {
+    margin: 0;
   }
 
   .nav-list {
@@ -67,7 +116,7 @@
   h3 {
     font-size: 1.25rem;
     margin: 0;
-    padding: 0.25rem 0;
+    padding: 0.5rem 0;
   }
 
   .col-head,
@@ -114,7 +163,7 @@
 
   div.radio {
     display: grid;
-    grid-template-columns: 1fr 1fr;    
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
 

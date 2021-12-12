@@ -3,12 +3,19 @@
     justify-content: space-evenly;
   }
 
+  body {
+    max-width: 1000px;
+  }
+
   header,
   footer,
   main,
-  nav,
-  .pancakes p {
-    font-size: 1.1rem;
+  nav ul li a {
+    font-size: 1.15rem;
+  }
+
+  main {
+    padding: 1rem;
   }
 
   h1 {
@@ -20,11 +27,12 @@
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    padding: 0.5rem 0;
   }
 
   h4 {
@@ -34,14 +42,6 @@
   .active {
     font-size: 1.25rem;
     padding: 1rem;
-  }
-
-  .flex img {
-    width: 80px;
-  }
-
-  .flex {
-    margin: 0.5rem 6rem;
   }
 
   .col-head,
@@ -67,21 +67,68 @@
   }
 
   div.directory.listview section img {
-    width: 40%;
+    width: 25%;
   }
 
   div.directory.listview section {
     justify-content: space-around;
+    width: 70%;
+    margin: 0.5rem auto;
   }
 
   section.directors {
     padding: 1rem;
   }
 
+  article img {
+    width: 40%;
+  }
+
+  div.homecontainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  div.homecontainer h2 {
+    grid-column: 1 / 4;    
+  }
+
+  section.upcomingevents,
+  div.topekaweather {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    padding: 0 0.25rem;
+  }
+
+  section.upcomingevents {
+    align-self: flex-end;
+    padding: 1rem 0;
+    display: block;
+  }
+
+  section.sally {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: block;
+  }
+
+  section.emily {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: block;
+  }
+
+  section.emily h3 {
+    padding: 0.5rem 0;
+  }
+
+  div.homecontainer article {
+    grid-column: 1 / 4;
+  }
+
+  section.benefits {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
   
-
-
-  /** {outline: solid 1px red;
-  }*/
-
 }

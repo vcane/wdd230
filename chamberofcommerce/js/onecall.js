@@ -17,24 +17,28 @@ fetch(weatherdata)
     };
     
     if (weatherdata.alerts.length > 0) {
-      console.log(weatherdata.alerts);
+      const alertdiv = document.createElement('div');
+      alertdiv.setAttribute('class', "alertcontainer");
+      const exitbutton = document.createElement('button');
+      exitbutton.textContent = '❌';
+
+      alertdiv.appendChild(exitbutton);
+      exitbutton.addEventListener('click', () => {
+        document.querySelector('#weatheralert').style.display = 'none';
+      });
+
       for (i = 0; i < weatherdata.alerts.length; i++) {
-        let alertdiv = document.createElement('div');
         let alertheading = document.createElement('p');
         let alertpara = document.createElement('p');
-
-        alertdiv.setAttribute('class', "alertcontainer");
+                
         alertheading.setAttribute('class', "alertheading");
         alertheading.textContent = `${weatherdata.alerts[i].event}`;
         alertpara.textContent = `${weatherdata.alerts[i].description}`;
-
+                
         alertdiv.appendChild(alertheading);
-        alertdiv.appendChild(alertpara);
-        document.querySelector('#weatheralert').appendChild(alertdiv);
+        alertdiv.appendChild(alertpara);        
+        document.querySelector('#weatheralert').appendChild(alertdiv);        
       }
-      document.querySelector('.alert').style.display = 'block';
+      document.querySelector('#weatheralert').style.display = 'block';      
     }
-
-  });
-
-  
+  });   
