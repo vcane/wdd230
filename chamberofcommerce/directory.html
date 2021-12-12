@@ -17,9 +17,12 @@
   <link rel="stylesheet" href="css/small.css" media="all">
   <link rel="stylesheet" href="css/medium.css" media="all">
   <link rel="stylesheet" href="css/large.css" media="all">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="shortcut icon" href="topcity.ico">
   <script defer src="js/button.js"></script>
   <script defer src="js/date.js"></script>
+  <script defer src="js/directory.js"></script>
+  <script defer src="js/directoryview.js"></script>
 
 </head>
 
@@ -32,6 +35,7 @@
       <span class="motto">"Building an excellent business network!"</span>
     </div>
   </header>
+  
   <nav>
     <ul class="nav-list">
       <li><a class="menu" href="#">Menu</a></li>
@@ -47,7 +51,14 @@
   </picture>
   <main>
     <h2>Membership Directory</h2>
-    <div id="directory"></div>
+    <div class="buttons">
+      <div class="list">
+        <span class="material-icons listview">view_list</span>
+      </div>
+      <div class="grid"><span class="material-icons gridview">grid_view</span>
+      </div>
+    </div>
+    <div class="directory"></div>
   </main>
   <footer>
     <section>
@@ -71,9 +82,10 @@
     <div class="attribution">
       <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
       <p>Weather data obtained from <a href="https://openweathermap.org/">openweather.org.</a></p>
+      <p id="lastupdate">Last updated: <span id="lastupdate"></span></p>
+      <p><a href="#top">Go to top</a></p>
     </div>
-    <p id="lastupdate">Last updated: <span id="lastupdate"></span></p>
-    <a href="#top">Go to top</a>
+    
   </footer>
 </body>
 </html>

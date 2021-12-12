@@ -4,7 +4,6 @@ const d = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sa
 fetch(weatherdata)
   .then((response) => response.json())
   .then((weatherdata) => {
-    console.log(weatherdata);
     document.querySelector('.t').textContent = Math.round(weatherdata.current.temp * 10) / 10;
     document.querySelector('.humidity').textContent = `${weatherdata.current.humidity}%`;
     document.querySelector('.cloudiness').textContent = weatherdata.current.weather[0].description;
@@ -16,6 +15,26 @@ fetch(weatherdata)
       weekday++
       temp++
     };
+    
+    if (weatherdata.alerts.length > 0) {
+      console.log(weatherdata.alerts);
+      for (i = 0; i < weatherdata.alerts.length; i++) {
+        let alertdiv = document.createElement('div');
+        let alertheading = document.createElement('p');
+        let alertpara = document.createElement('p');
+
+        alertdiv.setAttribute('class', "alertcontainer");
+        alertheading.setAttribute('class', "alertheading");
+        alertheading.textContent = `${weatherdata.alerts[i].event}`;
+        alertpara.textContent = `${weatherdata.alerts[i].description}`;
+
+        alertdiv.appendChild(alertheading);
+        alertdiv.appendChild(alertpara);
+        document.querySelector('#weatheralert').appendChild(alertdiv);
+      }
+      document.querySelector('.alert').style.display = 'block';
+    }
+
   });
 
   

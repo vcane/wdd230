@@ -33,7 +33,7 @@
   <nav>
     <ul class="nav-list">
       <li><a class="menu" href="#">Menu</a></li>
-      <li><a href="index.html" >Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="topeka.html">Topeka, Kansas</a></li>
       <li><a href="join.html" class="active">Join Us</a></li>
       <li><a href="directory.html">Member Directory</a></li>
@@ -42,14 +42,14 @@
   </nav>
   <picture class="herocontainer">
     <img src="images/businesswoman-hanshake.webp"
-        alt="Business woman extending hand to shake and welcoming to the group behind her. ">
+      alt="Business woman extending hand to shake and welcoming to the group behind her. ">
   </picture>
   <main>
     <h2>Join Us</h2>
     <h3>Instructions</h3>
     <p>Please complete the form below to request a membership in the Topeka Chamber of Commerce. Every label marked with
-      a red asterick (<span class="required">*</span>) is required to be completed. The required information is your
-      first name, last name, email, business name, and membership level.
+      a red asterick (<span class="required">*</span>) and red-dashed cell is required to be completed. The required information is your
+      first name, last name, email, business name, and membership level. When the required cell is filled with valid information, a double-lined green border will appear.
     </p>
     <p>
       All businesses and individuals that members of the chamber receive the Member-To-Member benefits regardless of
@@ -59,63 +59,83 @@
       Benefits. The following list provides a description of the benefits of each membership level. Please contact staff
       at the Chamber of Commerce for more details on the benefits.
     </p>
-    <ul>
-      <li>Gold membership benefits ($1000/year):
-        <ul>
-          <li>
-            5 business days of training for employees per year.
-          </li>
-          <li>
-            75% discount on tickets to the annual conference.
-          </li>
-          <li>
-            Sponsorships for advertisements.
-          </li>
-          <li>
-            Plus all benefits that the lower membership levels receive.
-          </li>
-        </ul>
-      </li>
-      <li>Silver membership benefits ($400/year):
-        <ul>
-          <li>
-            3 business days of training for employees per year.
-          </li>
-          <li>
-            50% discount on tickets to the annual conference.
-          </li>
-          <li>
-            Plus all benefits that the lower membership levels receive.
-          </li>
-        </ul>
-      </li>
-      <li>Bronze membership benefits ($200/year):
-        <ul>
-          <li>
-            Free social media advertisements.
-          </li>
-          <li>
-            25% discount on tickets to the annual conference.
-          </li>
-          <li>
-            Plus all benefits that the lower membership levels receive.
-          </li>
-        </ul>
-      </li>
-      <li>Non-profit membership benefits ($100/year):
-        <ul>
-          <li>
-            Free social media advertisements.
-          </li>
-          <li>
-            50% discount on tickets to the annual conference.
-          </li>
-          <li>
-            Free social media advertisements.
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <div class="listcontainer">
+      <ul>
+        <li>Gold membership benefits:
+          <ul>
+            <li>
+              Cost: $1000/year
+            </li>
+            <li>
+              5 business days of training for employees per year.
+            </li>
+            <li>
+              75% discount on tickets to the annual conference.
+            </li>
+            <li>
+              Sponsorships for advertisements.
+            </li>
+            <li>
+              Plus all benefits that the lower membership levels receive.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>Silver membership benefits:
+          <ul>
+            <li>
+              Cost: $400/year
+            </li>
+            <li>
+              3 business days of training for employees per year.
+            </li>
+            <li>
+              50% discount on tickets to the annual conference.
+            </li>
+            <li>
+              Plus all benefits that the lower membership levels receive.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>Bronze membership benefits:
+          <ul>
+            <li>
+              Cost: $200/year
+            </li>
+            <li>
+              Free social media advertisements.
+            </li>
+            <li>
+              25% discount on tickets to the annual conference.
+            </li>
+            <li>
+              Plus all benefits that the lower membership levels receive.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>Non-profit membership benefits:
+          <ul>
+            <li>
+              Cost: $100/year
+            </li>
+            <li>
+              Free social media advertisements.
+            </li>
+            <li>
+              50% discount on tickets to the annual conference.
+            </li>
+            <li>
+              Free social media advertisements.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <form method="get" action="thanks.html" id="form">
       <fieldset>
         <legend>Contact Information</legend>
@@ -132,7 +152,7 @@
         <label class="top">Cell Phone Number: <input type="tel" name="phone"
             title="Please enter your cell phone number with area code."></label>
         <label class="top">Business Name<span class="required">*</span>: <input type="text" name="businessname"
-            title="Please enter the name of your business." required pattern="[A-Za-z]+" minlength="2"></label>
+            title="Please enter the name of your business." required pattern="[A-Za-z ]+" minlength="2"></label>
         <label class="top">Business Street Address: <input type="text" name="streetaddress"
             title="Please enter the street address of your business."></label>
         <label class="top">City: <input type="text" name="cityname"
@@ -144,11 +164,12 @@
             title="Please enter the website for your business."></label>
         <label class="top">Business Description: <input type="text" name="businessdescription"
             title="Please enter a description of your business."></label>
-        <div class="radio">Please choose your membership level<span class="required">*</span>:
-          <label class="sbs"><input type="radio" name="membership" value="gold" required> Gold</label>
-          <label class="sbs"><input type="radio" name="membership" value="silver" required> Silver</label>
-          <label class="sbs"><input type="radio" name="membership" value="bronze" required> Bronze</label>
-          <label class="sbs"><input type="radio" name="membership" value="nonprofit" required> Non-profit</label>
+        <div class="radio">
+          <p>Please choose your membership level<span class="required">*</span>:</p>
+          <label class="gold"><input type="radio" name="membership" value="gold" required> Gold</label>
+          <label class="silver"><input type="radio" name="membership" value="silver" required> Silver</label>
+          <label class="bronze"><input type="radio" name="membership" value="bronze" required> Bronze</label>
+          <label class="nonprofit"><input type="radio" name="membership" value="nonprofit" required> Non-profit</label>
         </div>
       </fieldset>
       <button type="submit" class="submit" form="form" formaction="thanks.html" name="reportbutton">Join Us!</button>

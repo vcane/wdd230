@@ -13,8 +13,16 @@ body {
   text-align: left;
 }
 
-.alert {
+aside.alert {
   display: none;
+  background-color: rgb(230, 213, 20);
+  padding: 1rem;
+}
+
+p.alertheading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
 header {
@@ -69,7 +77,8 @@ nav a:hover {
   padding: 0.9rem;
 }
 
-main, footer {
+main,
+footer {
   font-size: 0.95rem;
   padding: 0.5rem;
 }
@@ -98,15 +107,62 @@ h3 {
   font-size: 1rem;
 }
 
-p { 
+p {
   margin: 0;
-  padding: 0 0.25rem 0.5rem 0.25rem;
+  padding: 0 0.5rem 0.5rem;
+}
+
+section.benefits,
+section.upcomingevents,
+section.ad,
+article,
+section.weather {
+  border: 1px solid rgb(33, 41, 153);
+  margin: 1rem 0;
+}
+
+section.upcomingevents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.upcomingevents p {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+section.ad ul li {
+  list-style-type: '🤿';
+}
+
+section.sally ul li {
+  list-style-type: '✂';
+}
+
+section.emily ul li {
+  list-style-type: '🎂';
+}
+
+section.ad ul li,
+section.benefits ul li,
+article ol li {
+  padding-inline-start: 0.25rem;
+  padding-inline-end: 0.5rem;
+}
+
+section.benefits p {
+  padding: 0 0.5rem;
 }
 
 section picture img,
-article picture img,
+article img,
 picture.herocontainer img {
   width: 100%;
+}
+
+.directory section img {
+  width: 70%;
 }
 
 section div {
@@ -146,84 +202,157 @@ div.iframecontainer iframe {
 }
 
 form fieldset {
-  margin: 1rem 0;
   padding: 0.5rem 2rem 0.5rem 0.75rem;
-  background-color: rgb(232, 213, 195);
-  box-shadow: 0 0 0.5rem 0.5rem rgb(64, 64, 64);
-  border: 1px solid rgb(64, 64, 64);
+  background-color: rgb(230, 213, 20);
+  border: 1px solid rgb(33, 41, 153);
   border-radius: 5px;
 }
 
 legend {
   font-size: 1rem;
-  background-color: rgb(232, 213, 195);
-  border: 1px solid rgb(64, 64, 64);
+  background-color: rgb(230, 213, 20);
+  border: 1px solid rgb(33, 41, 153);
   border-radius: 5px;
   margin: 0 10px;
   padding: 0.25rem;
 }
 
 form label.top,
-form div label,
-form div.danger {
+form div label {
   display: block;
   padding: 0.75rem 0;
-
 }
 
 form label.top input,
-form label.top select,
 form label.top textarea {
   display: block;
   width: 100%;
   padding: 0.75rem 0.5rem;
-  color: rgb(64, 64, 64);
-  border: 1px solid rgb(64, 64, 64);
+  color: rgb(33, 41, 153);
+  border: 1px solid rgb(33, 41, 153);
   border-radius: 5px;
 }
 
-form div.danger {
+section.weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  margin: 1rem auto;
+}
+
+section.weather h3 {
+  grid-column: 1 / 3;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+section.weather p.temp {
+  grid-row: 2 / 4;
+  grid-column: 1 / 3;
+  align-self: center;
+  justify-self: center;
+  font-style: italic;
+}
+
+section.weather p.left {
+  justify-self: right;
+}
+
+section.weather p.right {
+  justify-self: left;
+}
+
+.flex {
   display: flex;
-  align-items: center;
+  flex-flow: row wrap;
+  margin: 0.5rem 0;
+}
+
+.flex-col:nth-child(1) {
+  border-left: 1px solid rgb(33, 41, 153);
+}
+
+.flex-col {
+  flex: 1 1 auto;
   text-align: center;
+  border-right: 1px solid rgb(33, 41, 153);
+  border-bottom: 1px solid rgb(33, 41, 153);
 }
 
-/*form div.danger label.sbs {
-  padding: 0.75rem;
-}
-
-form label.top #severity {
+.col-head,
+.condition {
   display: block;
-  padding: 0;
-  width: 100%;
+  padding: 0.25rem;
 }
 
-form label #severity {
-  padding: 0.25rem;
-}*/
+.col-head {
+  border-top: 1px solid rgb(33, 41, 153);
+  border-bottom: 1px solid rgb(33, 41, 153);
+}
 
-input[type=radio] {
+input[type='radio'] {
+  -webkit-appearance: none;
   width: 25px;
   height: 25px;
+  border: 1px solid rgb(33, 41, 153);
+  border-radius: 50%;
+  outline: none;
+
+}
+
+input[type='radio']:hover {
+  box-shadow: 0 0 5px 0px rgb(230, 41, 34);
+}
+
+input[type='radio']:before {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked:before {
+  background: rgb(33, 41, 153);
 }
 
 form button.submit {
   display: block;
   padding: 0.75rem;
-  color: rgb(64, 64, 64);
-  background-color: rgb(232, 213, 195);
-  border: 3px solid rgb(64, 64, 64);
+  color: rgb(33, 41, 153);
+  background-color: rgb(230, 213, 20);
+  border: 3px solid rgb(33, 41, 153);
   border-radius: 1rem;
   margin: 1rem auto;
   font-size: 1.1rem;
 }
 
 form label.top :required {
-  border: 2px solid rgb(255, 0, 0);
+  border: 3px dashed rgb(230, 41, 34);
 }
 
 form label.top :required:valid {
-  border: 2px solid rgb(0, 128, 0);
+  border: 5px double rgb(0, 128, 0);
+}
+
+span.required {
+  color: rgb(255, 0, 0);
+  font-size: 1.25rem;
+}
+
+div.directory {
+  text-align: center;
+}
+
+div.directory section {
+  border: 1px solid rgb(33, 41, 153);
+  padding: 0.25rem;
+  margin: 0.5rem 0;
+}
+
+div.buttons {
+  display: none;
 }
 
 footer {
@@ -243,28 +372,3 @@ div.address span {
 .icon {
   font-size: 1.25rem;
 }
-/*---------fonts------------*/
-/*font-family: 'Nanum Myeongjo', serif;
-  font-family: 'Poppins', sans-serif;*/
-
-/*-------------colors---------*/
-/* Color Theme Swatches in Hex 
-.Chamber1-1-hex { color: #212999; }
-.Chamber1-2-hex { color: #E62922; }
-.Chamber1-3-hex { color: #D2DDE8; }
-.Chamber1-4-hex { color: #E6D514; }
-.Chamber1-5-hex { color: #9E9552; }*/
-
-/*Color Theme Swatches in RGBA 
-.Chamber1-1-rgba { color: rgba(33, 41, 153, 1); }
-.Chamber1-2-rgba { color: rgba(230, 41, 34, 1); }
-.Chamber1-3-rgba { color: rgba(210, 221, 232, 1); }
-.Chamber1-4-rgba { color: rgba(230, 213, 20, 1); }
-.Chamber1-5-rgba { color: rgba(158, 149, 82, 1); }*/
-
-/*Color Theme Swatches in HSLA 
-.Chamber1-1-hsla { color: hsla(236, 64, 36, 1); }
-.Chamber1-2-hsla { color: hsla(2, 79, 51, 1); }
-.Chamber1-3-hsla { color: hsla(209, 32, 86, 1); }
-.Chamber1-4-hsla { color: hsla(55, 83, 49, 1); }
-.Chamber1-5-hsla { color: hsla(52, 31, 47, 1); }*/

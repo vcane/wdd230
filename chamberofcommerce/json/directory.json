@@ -2,59 +2,66 @@
   "directory": [
     {
       "name": "Nothing Bundt Cakes",
-      "address": "2121 SW Wanamaker Rd Ste. 101-A",
+      "address": "2121 SW Wanamaker",
       "phone": "(785) 940-4080",
-      "website": "https://www.nothingbundtcakes.com/",
+      "website": "https://www.nothingbundtcakes.com",
       "email": "topeka@nothingbundtcakes.com",
-      "logo": "images/nothingbundtcakes.png"
+      "logo": "images/nothingbundtcakes2.webp",
+      "websitename": "nothingbundtcakes.com"
     },
     {
       "name": "Academy Sports + Outdoors",
-      "address": "1133 SW Wanamaker Rd Ste. 300",
+      "address": "1133 SW Wanamaker",
       "phone": "(785) 228-4220",
-      "website": "https://www.academy.com/",
-      "email": "customerservice@academy.com",
-      "logo": "images/academy.png"
+      "website": "https://www.academy.com",
+      "email": "email@academy.com",
+      "logo": "images/academy2.webp",
+      "websitename": "academy.com"
     },
     {
       "name": "Seabrook Apple Market",
       "address": "1945 SW Gage BLVD",
       "phone": "(785) 228-8740",
-      "website": "seabrook.myapplemarket.com/",
-      "email": "seabrook@myapplemarket.com",
-      "logo": "images/seabrook.png"
+      "website": "https://seabrook.myapplemarket.com/",
+      "email": "email@applemarket.com",
+      "logo": "images/seabrook2.webp",
+      "websitename" : "seabrook.myapplemarket.com"
     },
     {
       "name": "Capitol Federal",
       "address": "2901 S Kansas Ave",
       "phone": "(785) 231-6290",
-      "website": "https://www.capfed.com/",
+      "website": "https://www.capfed.com",
       "email": "email@capfed.com",
-      "logo": "images/capitolfed.png"
+      "logo": "images/capitolfed2.webp",
+      "websitename" : "capfed.com"
     },
     {
       "name": "Herman's Meat & Smokehouse",
       "address": "4211 SW Huntoon",
       "phone": "(785) 273-8481",
-      "website": "https://www.hermansmeat.com/",
+      "website": "https://www.hermansmeat.com",
       "email": "jeff@hermansmeat.com",
-      "logo": "images/hermans.webp"
+      "logo": "images/hermans2.webp",
+      "websitename" : "hermansmeat.com"
     },
     {
       "name": "Stormont Vail Health",
-      "address": "1500 SW 10th Ave.",
+      "address": "1500 SW 10th Ave",
       "phone": "(785) 354-6000",
-      "website": "https://www.stormontvail.org/",
+      "website": "https://www.stormontvail.org",
       "email": "email@stormontvail.org",
-      "logo": "images/stormontvail.png"
+      "logo": "images/stormontvail2.webp",
+      "websitename" : "stormontvail.org"
     },
     {
       "name": "Ramsey Automotive",
       "address": "2034 SE Hudson Blvd.",
       "phone": "(785) 234-4731",
-      "website": "http://ramsey-automotive.edan.io/",
+      "website": "http://ramsey-automotive.edan.io",
       "email": "craig@ramseyauto.com",
-      "logo": "images/auto.webp"
+      "logo": "images/auto2.webp",
+      "websitename": "ramsey-automotive.edan.io"
     }
   ]
 }
