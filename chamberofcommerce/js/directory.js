@@ -17,7 +17,7 @@ fetch(membership)
       let website = document.createElement('a');
 
       logo.setAttribute('src', member.logo);
-      logo.setAttribute('alt', "Business Logo");
+      logo.setAttribute('alt', `${member.name} Business Logo`);
       logo.setAttribute('loading', "lazy");
       contactinfo.setAttribute('class', "contactinfo");
       h3.textContent = `${member.name}`;

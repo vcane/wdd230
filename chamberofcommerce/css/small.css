@@ -50,6 +50,12 @@ header {
   text-align: center;
 }
 
+header img {
+  width: 80px;
+  border: 1px solid rgb(33, 41, 153);
+  margin: 0.5rem;
+}
+
 nav {
   background-color: rgb(230, 213, 20);
 }
@@ -90,9 +96,13 @@ nav a:hover {
 .active {
   font-weight: bold;
   font-size: 1.2rem;
-  color: rgb(33, 41, 153);
+  
   padding: 0.9rem;
   background-color: rgba(230, 41, 34, 0.5);
+}
+
+ul.lists li, ol.lists li {
+  margin: 0.5rem 0;
 }
 
 main,
@@ -109,10 +119,6 @@ h4 {
   text-align: center;
 }
 
-header img {
-  width: 128px;
-}
-
 h1 {
   font-size: 1.5rem;
 }
@@ -127,7 +133,7 @@ h3 {
 
 p {
   margin: 0;
-  padding: 0 0.5rem 0.5rem;
+  padding: 0.5rem;
 }
 
 section.benefits,
@@ -140,26 +146,11 @@ section.weather {
 }
 
 section.upcomingevents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 section.upcomingevents p {
-  padding: 0 0.5rem 0.5rem 0.5rem;
-}
-
-section.ad ul li {
-  list-style-type: '🤿';
-}
-
-section.sally ul li {
-  list-style-type: '✂';
-}
-
-section.emily ul li {
-  list-style-type: '🎂';
+  padding: 0.5rem;
 }
 
 section.ad ul li,
@@ -167,10 +158,6 @@ section.benefits ul li,
 article ol li {
   padding-inline-start: 0.25rem;
   padding-inline-end: 0.5rem;
-}
-
-section.benefits p {
-  padding: 0 0.5rem;
 }
 
 section picture img,
@@ -217,6 +204,7 @@ div.iframecontainer iframe {
   left: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 form fieldset {
@@ -352,11 +340,6 @@ form label.top :required {
 
 form label.top :required:valid {
   border: 5px double rgb(0, 128, 0);
-}
-
-span.required {
-  color: rgb(255, 0, 0);
-  font-size: 1.25rem;
 }
 
 div.directory {

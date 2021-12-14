@@ -1,5 +1,5 @@
 const weatherdata = "https://api.openweathermap.org/data/2.5/onecall?lat=39.045114&lon=-95.687433&units=imperial&exclude=minutely,hourly&appid=7bac549adf517ccf2fead6b8f3b137c6";
-const d = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const d = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
 fetch(weatherdata)
   .then((response) => response.json())
