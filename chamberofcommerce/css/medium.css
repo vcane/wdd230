@@ -3,6 +3,18 @@
     justify-content: space-around;
   }
 
+  p.alertpara, p.alertheading  {
+    width: 90%;
+  }
+
+  p.alertheading {
+    margin: 1rem auto 0;
+  }
+
+  p.alertpara {
+    margin: 0 auto;
+  }
+
   header img {
     width: 100px;
   }

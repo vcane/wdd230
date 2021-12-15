@@ -1,9 +1,11 @@
 const weatherdata = "https://api.openweathermap.org/data/2.5/onecall?lat=39.045114&lon=-95.687433&units=imperial&exclude=minutely,hourly&appid=7bac549adf517ccf2fead6b8f3b137c6";
 const d = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
+
 fetch(weatherdata)
-  .then((response) => response.json())
+  .then((response) => response.json())  
   .then((weatherdata) => {
+    console.log(weatherdata);
     document.querySelector('.t').textContent = Math.round(weatherdata.current.temp * 10) / 10;
     document.querySelector('.humidity').textContent = `${weatherdata.current.humidity}%`;
     document.querySelector('.cloudiness').textContent = weatherdata.current.weather[0].description;
@@ -17,6 +19,7 @@ fetch(weatherdata)
     };
     
     if (weatherdata.alerts.length > 0) {
+      
       const alertdiv = document.createElement('div');
       alertdiv.setAttribute('class', "alertcontainer");
       const exitbutton = document.createElement('button');
@@ -32,8 +35,9 @@ fetch(weatherdata)
         let alertpara = document.createElement('p');
                 
         alertheading.setAttribute('class', "alertheading");
+        alertpara.setAttribute('class', "alertpara");
         alertheading.textContent = `${weatherdata.alerts[i].event}`;
-        alertpara.textContent = `${weatherdata.alerts[i].description}`;
+        alertpara.innerHTML = `${weatherdata.alerts[i].description}`.replace(/(\n)+/g, '<br />');
                 
         alertdiv.appendChild(alertheading);
         alertdiv.appendChild(alertpara);        

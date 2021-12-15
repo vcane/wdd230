@@ -3,6 +3,10 @@
     justify-content: space-evenly;
   }
 
+  p.alertpara, p.alertheading {
+    width: 60%;
+  }
+
   header img {
     width: 110px;
   }
@@ -87,8 +91,6 @@
 
   section.upcomingevents {
     align-self: flex-end;
-    padding: 1rem;
-    display: block;
   }
 
   section.sally {
