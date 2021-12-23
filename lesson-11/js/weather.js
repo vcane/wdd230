@@ -40,6 +40,7 @@ fetch(forecastURL)
   .then((response) => response.json())
   .then((forecast) => {
     const time = forecast.list.filter(time => time.dt_txt.includes('18:00:00'));
+    console.log(time);
     let weekday = 0;
     let temp = 0;
     let icon = 0;
